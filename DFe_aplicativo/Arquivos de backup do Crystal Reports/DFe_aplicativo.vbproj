@@ -1,0 +1,1186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81B76081-C48D-4E90-8F84-195695CECEA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DFe_aplicativo.My.MyApplication</StartupObject>
+    <RootNamespace>DFe_aplicativo</RootNamespace>
+    <AssemblyName>DFe_aplicativo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DFe_aplicativo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DFe_aplicativo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dfe-ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DFe_aplicativo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>DFe_aplicativo.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>\\192.168.254.2\SGLinx\WSLinear\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>C:\Users\adeni\Desktop\Gerenciando_QRCode\Gerenciando_QRCode\Gerenciando_QRCode\bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.4.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors">
+      <HintPath>..\packages\Microsoft.Owin.Cors.4.0.1\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems">
+      <HintPath>..\packages\Microsoft.Owin.FileSystems.4.0.1\lib\net45\Microsoft.Owin.FileSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.HttpListener">
+      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.4.0.1\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Hosting">
+      <HintPath>..\packages\Microsoft.Owin.Hosting.4.0.1\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.StaticFiles">
+      <HintPath>..\packages\Microsoft.Owin.StaticFiles.4.0.1\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="MTGCCombobox">
+      <HintPath>..\..\ProjetoNFE\ProjetoNFE\ProjetoNFE\ProjetoNFE\bin\Debug\MTGCCombobox.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlBackup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySqlBackup.1.0.1\lib\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp">
+      <HintPath>\\192.168.254.2\SGLinx\WSLinear\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.111.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.111.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.7\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Tungsten.Firewall">
+      <HintPath>..\packages\Tungsten.Firewall.2.0.2\lib\net45\Tungsten.Firewall.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArquivoIni.vb" />
+    <Compile Include="Cer_crypto.vb" />
+    <Compile Include="Classe DFe\Assinatura.vb" />
+    <Compile Include="Classe DFe\CertificadoDigital.vb" />
+    <Compile Include="Classe DFe\clsPlugin.vb" />
+    <Compile Include="Classe DFe\CodigodeBarra.vb" />
+    <Compile Include="Classe DFe\funcoesNfe.vb" />
+    <Compile Include="Classe DFe\Funcoes_linear.vb" />
+    <Compile Include="Classe DFe\LerXmlNFE.vb" />
+    <Compile Include="Classe DFe\NFe.vb" />
+    <Compile Include="Classe DFe\Nfe_DanfeRetratoNFCereduzido.vb" />
+    <Compile Include="Classe DFe\Nfe_ImprimirDanfeRetrato.vb" />
+    <Compile Include="Classe DFe\Nfe_ImprimirDanfeRetratoNFCe.vb" />
+    <Compile Include="Classe DFe\ValidarXML.vb" />
+    <Compile Include="classe_windows\ApiURL.vb" />
+    <Compile Include="classe_windows\BaseModel.vb" />
+    <Compile Include="classe_windows\Campo.vb" />
+    <Compile Include="classe_windows\cryptografia_linear.vb" />
+    <Compile Include="classe_windows\DBHelper.vb" />
+    <Compile Include="classe_windows\Firewall.vb" />
+    <Compile Include="classe_windows\HttpRequest.vb" />
+    <Compile Include="classe_windows\info_sist.vb" />
+    <Compile Include="classe_windows\LinxOSCliente.vb" />
+    <Compile Include="classe_windows\LinxOSLicenca.vb" />
+    <Compile Include="classe_windows\MonitorConfig.vb" />
+    <Compile Include="classe_windows\MysqlControl.vb" />
+    <Compile Include="classe_windows\PeriodicidadeConst.vb" />
+    <Compile Include="classe_windows\Processamentos.vb" />
+    <Compile Include="classe_windows\Registro.vb" />
+    <Compile Include="classe_windows\Retorno.vb" />
+    <Compile Include="classe_windows\sistema.vb" />
+    <Compile Include="classe_windows\Tarefa.vb" />
+    <Compile Include="Class_Signature\Signature.vb" />
+    <Compile Include="Class_Signature\SignatureKeyInfo.vb" />
+    <Compile Include="Class_Signature\SignatureKeyInfoX509Data.vb" />
+    <Compile Include="Class_Signature\SignatureSignedInfo.vb" />
+    <Compile Include="Class_Signature\SignatureSignedInfoCanonicalizationMethod.vb" />
+    <Compile Include="Class_Signature\SignatureSignedInfoReference.vb" />
+    <Compile Include="Class_Signature\SignatureSignedInfoReferenceDigestMethod.vb" />
+    <Compile Include="Class_Signature\SignatureSignedInfoReferenceTransform.vb" />
+    <Compile Include="Class_Signature\SignatureSignedInfoSignatureMethod.vb" />
+    <Compile Include="clsDadosempresa.vb" />
+    <Compile Include="clsDadosDest.vb" />
+    <Compile Include="clsDateTime.vb" />
+    <Compile Include="clsZip.vb" />
+    <Compile Include="conexao.vb" />
+    <Compile Include="conexao_sqlite.vb" />
+    <Compile Include="Crypto.vb" />
+    <Compile Include="DataSetDFe.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDFe.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Mysql.vb" />
+    <Compile Include="frmbarras.designer.vb">
+      <DependentUpon>frmbarras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmbarras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcalcpreco.designer.vb">
+      <DependentUpon>frmcalcpreco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcalcpreco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcancelanfe.designer.vb">
+      <DependentUpon>frmcancelanfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcancelanfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcarga.Designer.vb">
+      <DependentUpon>frmcarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcarta_correcao.designer.vb">
+      <DependentUpon>frmcarta_correcao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcarta_correcao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcest.designer.vb">
+      <DependentUpon>frmcest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCidades.designer.vb">
+      <DependentUpon>FrmCidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcliente.designer.vb">
+      <DependentUpon>frmcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcod_for.Designer.vb">
+      <DependentUpon>frmcod_for.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcod_for.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaDestinatario.designer.vb">
+      <DependentUpon>FrmConsultaDestinatario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaDestinatario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaProduto.designer.vb">
+      <DependentUpon>FrmConsultaProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdfe2.Designer.vb">
+      <DependentUpon>frmdfe2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdfe2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpresa.designer.vb">
+      <DependentUpon>FrmEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfornecedor.designer.vb">
+      <DependentUpon>frmfornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmfornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminutilizar_nfe.designer.vb">
+      <DependentUpon>frminutilizar_nfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminutilizar_nfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlicenca.designer.vb">
+      <DependentUpon>frmlicenca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlicenca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin_windows.Designer.vb">
+      <DependentUpon>frmlogin_windows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin_windows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogsitevb.Designer.vb">
+      <DependentUpon>frmLogsitevb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogsitevb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnat.designer.vb">
+      <DependentUpon>frmnat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNCM.designer.vb">
+      <DependentUpon>FrmNCM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNCM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnfe_entrada.Designer.vb">
+      <DependentUpon>frmnfe_entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnfe_entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmoperador.Designer.vb">
+      <DependentUpon>frmoperador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmoperador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpesquisanfe_Ent.designer.vb">
+      <DependentUpon>frmpesquisanfe_Ent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpesquisanfe_Ent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpesquisanfe_emi.designer.vb">
+      <DependentUpon>frmpesquisanfe_emi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpesquisanfe_emi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpesquisa_cst.designer.vb">
+      <DependentUpon>frmpesquisa_cst.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpesquisa_cst.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmportalnfe.Designer.vb">
+      <DependentUpon>frmportalnfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmportalnfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduto.designer.vb">
+      <DependentUpon>FrmProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsintegravb.Designer.vb">
+      <DependentUpon>frmsintegravb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsintegravb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvisualizar_xml.Designer.vb">
+      <DependentUpon>frmvisualizar_xml.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmvisualizar_xml.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmxml_nfe.designer.vb">
+      <DependentUpon>frmxml_nfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmxml_nfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bematech.Designer.vb">
+      <DependentUpon>frm_bematech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bematech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_difalSG.Designer.vb">
+      <DependentUpon>frm_difalSG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_difalSG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_envNFCe.designer.vb">
+      <DependentUpon>frm_envNFCe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_envNFCe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_import.Designer.vb">
+      <DependentUpon>frm_import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_imp_ncm.Designer.vb">
+      <DependentUpon>frm_imp_ncm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_imp_ncm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pesquisacte.Designer.vb">
+      <DependentUpon>frm_pesquisacte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pesquisacte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_visualiza_rel.Designer.vb">
+      <DependentUpon>frm_visualiza_rel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_visualiza_rel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUNCAO Gera XML\detPag.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS00.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS10.vb" />
+    <Compile Include="FUNCAO Gera XML\infNFE.vb" />
+    <Compile Include="FUNCAO Gera XML\pag.vb" />
+    <Compile Include="Funcoes_sist.vb" />
+    <Compile Include="GerarXML_nfce.vb" />
+    <Compile Include="GetDotNetVersion.vb" />
+    <Compile Include="ICMSTot.vb" />
+    <Compile Include="ImprimirXMLNFCeBematech.vb" />
+    <Compile Include="Logon_windows.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="mysql_funcoes.vb" />
+    <Compile Include="Paginacao.vb" />
+    <Compile Include="ret_cidade.vb" />
+    <Compile Include="Self_host\Controllers\consultacliController.vb" />
+    <Compile Include="Self_host\Controllers\datahora_servidorController.vb" />
+    <Compile Include="Self_host\Controllers\Processar_vendasistController.vb" />
+    <Compile Include="Self_host\Controllers\TranspFileAsJSonController.vb" />
+    <Compile Include="Self_host\Controllers\Web4_DFeController.vb" />
+    <Compile Include="Self_host\Controllers\IP_caixaController.vb" />
+    <Compile Include="Self_host\Controllers\Web4_EnviaNFe_contController.vb" />
+    <Compile Include="Self_host\Controllers\Web4_statusController.vb" />
+    <Compile Include="Self_host\Controllers\Web4_EnviaNFeController.vb" />
+    <Compile Include="Self_host\Controllers\Web4_statusNFe_listController.vb" />
+    <Compile Include="Self_host\Controllers\Web4_statusNFeController.vb" />
+    <Compile Include="frmcert.designer.vb">
+      <DependentUpon>frmcert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Self_host\frmurl.designer.vb">
+      <DependentUpon>frmurl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Self_host\frmurl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Self_host\Monitoramento.vb" />
+    <Compile Include="Self_host\Startup.vb" />
+    <Compile Include="Self_host\WEBSERVICE\Webservice4S.vb" />
+    <Compile Include="teste.vb" />
+    <Compile Include="Utilitarios.vb" />
+    <Compile Include="WebService\CadConsultaCadastro4.vb" />
+    <Compile Include="WebService\CTeDistribuicaoDFe.vb" />
+    <Compile Include="WebService\NFeAutorizacao4.vb" />
+    <Compile Include="WebService\NFeinutilizacao4.vb" />
+    <Compile Include="WebService\NFeRecepcaoEvento4rfb.vb" />
+    <Compile Include="WebService\NFeRetAutorizacao4.vb" />
+    <Compile Include="WEbservice_acao\DefaultPrinter.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcadastro.designer.vb">
+      <DependentUpon>frmcadastro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcadastro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcaptcha.Designer.vb">
+      <DependentUpon>frmcaptcha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcaptcha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdanfe.designer.vb">
+      <DependentUpon>frmdanfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdanfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDfe.Designer.vb">
+      <DependentUpon>FrmDfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdownloadnfe.designer.vb">
+      <DependentUpon>frmdownloadnfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdownloadnfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmenvia_email.designer.vb">
+      <DependentUpon>frmenvia_email.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmenvia_email.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminfo.designer.vb">
+      <DependentUpon>frminfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminfocertificado.designer.vb">
+      <DependentUpon>frminfocertificado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminfocertificado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlernfe.designer.vb">
+      <DependentUpon>frmlernfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlernfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmanifestarind.designer.vb">
+      <DependentUpon>frmmanifestarind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmanifestarind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnfelocal.designer.vb">
+      <DependentUpon>frmnfelocal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmnfelocal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOnedrive.designer.vb">
+      <DependentUpon>frmOnedrive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOnedrive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmparametro.designer.vb">
+      <DependentUpon>frmparametro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmparametro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpesquisarnfe.designer.vb">
+      <DependentUpon>frmpesquisarnfe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpesquisarnfe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpesq_onedrive.Designer.vb">
+      <DependentUpon>frmpesq_onedrive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpesq_onedrive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprincipal.Designer.vb">
+      <DependentUpon>frmprincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmprincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmresult_validacao.Designer.vb">
+      <DependentUpon>frmresult_validacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmresult_validacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmretdowload.designer.vb">
+      <DependentUpon>frmretdowload.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmretdowload.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmretmanifest.designer.vb">
+      <DependentUpon>frmretmanifest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmretmanifest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstatus.designer.vb">
+      <DependentUpon>frmstatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmstatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtela_cert.designer.vb">
+      <DependentUpon>frmtela_cert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtela_cert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmwebservice.Designer.vb">
+      <DependentUpon>frmwebservice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmwebservice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmxml.designer.vb">
+      <DependentUpon>frmxml.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmxml.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUNCAO Gera XML\adi.vb" />
+    <Compile Include="FUNCAO Gera XML\arma.vb" />
+    <Compile Include="FUNCAO Gera XML\avulsa.vb" />
+    <Compile Include="FUNCAO Gera XML\CIDE.vb" />
+    <Compile Include="FUNCAO Gera XML\cobr.vb" />
+    <Compile Include="FUNCAO Gera XML\COFINS.vb" />
+    <Compile Include="FUNCAO Gera XML\COFINSAliq.vb" />
+    <Compile Include="FUNCAO Gera XML\COFINSNT.vb" />
+    <Compile Include="FUNCAO Gera XML\COFINSOutr.vb" />
+    <Compile Include="FUNCAO Gera XML\COFINSQtde.vb" />
+    <Compile Include="FUNCAO Gera XML\COFINSST.vb" />
+    <Compile Include="FUNCAO Gera XML\comb.vb" />
+    <Compile Include="FUNCAO Gera XML\compra.vb" />
+    <Compile Include="FUNCAO Gera XML\dest.vb" />
+    <Compile Include="FUNCAO Gera XML\det.vb" />
+    <Compile Include="FUNCAO Gera XML\DI.vb" />
+    <Compile Include="FUNCAO Gera XML\dup.vb" />
+    <Compile Include="FUNCAO Gera XML\emit.vb" />
+    <Compile Include="FUNCAO Gera XML\enderDest.vb" />
+    <Compile Include="FUNCAO Gera XML\enderEmit.vb" />
+    <Compile Include="FUNCAO Gera XML\entrega.vb" />
+    <Compile Include="FUNCAO Gera XML\exporta.vb" />
+    <Compile Include="FUNCAO Gera XML\fat.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS20.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS30.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS40.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS51.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS60.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS70.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMS90.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSComb.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSCons.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSInter.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSPart.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSSN101.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSSN102.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSSN201.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSSN202.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSSN500.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSSN900.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSST.vb" />
+    <Compile Include="FUNCAO Gera XML\ICMSUFDest.vb" />
+    <Compile Include="FUNCAO Gera XML\ide.vb" />
+    <Compile Include="FUNCAO Gera XML\II.vb" />
+    <Compile Include="FUNCAO Gera XML\imposto.vb" />
+    <Compile Include="FUNCAO Gera XML\infAdic.vb" />
+    <Compile Include="FUNCAO Gera XML\IPI.vb" />
+    <Compile Include="FUNCAO Gera XML\IPINT.vb" />
+    <Compile Include="FUNCAO Gera XML\IPITrib.vb" />
+    <Compile Include="FUNCAO Gera XML\ISSQN.vb" />
+    <Compile Include="FUNCAO Gera XML\ISSQNTot.vb" />
+    <Compile Include="FUNCAO Gera XML\lacres.vb" />
+    <Compile Include="FUNCAO Gera XML\rastro.vb" />
+    <Compile Include="FUNCAO Gera XML\NFref.vb" />
+    <Compile Include="FUNCAO Gera XML\obsCont.vb" />
+    <Compile Include="FUNCAO Gera XML\obsFisco.vb" />
+    <Compile Include="FUNCAO Gera XML\PIS.vb" />
+    <Compile Include="FUNCAO Gera XML\PISAliq.vb" />
+    <Compile Include="FUNCAO Gera XML\PISNT.vb" />
+    <Compile Include="FUNCAO Gera XML\PISOutr.vb" />
+    <Compile Include="FUNCAO Gera XML\PISQtde.vb" />
+    <Compile Include="FUNCAO Gera XML\PISST.vb" />
+    <Compile Include="FUNCAO Gera XML\procRef.vb" />
+    <Compile Include="FUNCAO Gera XML\prod.vb" />
+    <Compile Include="FUNCAO Gera XML\reboque.vb" />
+    <Compile Include="FUNCAO Gera XML\refECF.vb" />
+    <Compile Include="FUNCAO Gera XML\refNF.vb" />
+    <Compile Include="FUNCAO Gera XML\retirada.vb" />
+    <Compile Include="FUNCAO Gera XML\retTransp.vb" />
+    <Compile Include="FUNCAO Gera XML\retTrib.vb" />
+    <Compile Include="FUNCAO Gera XML\total.vb" />
+    <Compile Include="FUNCAO Gera XML\transp.vb" />
+    <Compile Include="FUNCAO Gera XML\transporta.vb" />
+    <Compile Include="FUNCAO Gera XML\veicProd.vb" />
+    <Compile Include="FUNCAO Gera XML\Veiculo.vb" />
+    <Compile Include="FUNCAO Gera XML\vol.vb" />
+    <Compile Include="ModuleINI.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Obrigatorio.vb" />
+    <Compile Include="Parametro.vb" />
+    <Compile Include="WebService\CadConsultaCadastro2.vb" />
+    <Compile Include="WebService\nfeCabecMsg.vb" />
+    <Compile Include="WebService\NfeConsulta2.vb" />
+    <Compile Include="WebService\NFeConsulta4.vb" />
+    <Compile Include="WebService\nfeConsultaNFDest .vb" />
+    <Compile Include="WebService\NFeDistribuicaoDFe.vb" />
+    <Compile Include="WebService\NfeDownloadNF.vb" />
+    <Compile Include="WebService\NFeRecepcaoEvento4.vb" />
+    <Compile Include="WebService\NfeStatusServico2.vb" />
+    <Compile Include="WebService\NfeStatusServico4.vb" />
+    <Compile Include="WEbservice_acao\C_WebService.vb" />
+    <Compile Include="WEbservice_acao\url_webservice.vb" />
+    <Compile Include="WEbservice_acao\WebService4\procInutNFe.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retConsCad.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retConsReciNFe.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retConsSitNFe.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retConsStatServ.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retDistDFeInt.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retEnvEvento.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retEnviNFe.vb" />
+    <Compile Include="WEbservice_acao\WebService4\retInutNFe.vb" />
+    <Compile Include="WEbservice_acao\WebService4\Webservice4.vb" />
+    <Compile Include="ws02.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ws02.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbarras.resx">
+      <DependentUpon>frmbarras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcadastro.resx">
+      <DependentUpon>frmcadastro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcalcpreco.resx">
+      <DependentUpon>frmcalcpreco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcancelanfe.resx">
+      <DependentUpon>frmcancelanfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcaptcha.resx">
+      <DependentUpon>frmcaptcha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcarga.resx">
+      <DependentUpon>frmcarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcarta_correcao.resx">
+      <DependentUpon>frmcarta_correcao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcest.resx">
+      <DependentUpon>frmcest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCidades.resx">
+      <DependentUpon>FrmCidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcliente.resx">
+      <DependentUpon>frmcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcod_for.resx">
+      <DependentUpon>frmcod_for.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaDestinatario.resx">
+      <DependentUpon>FrmConsultaDestinatario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaProduto.resx">
+      <DependentUpon>FrmConsultaProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdanfe.resx">
+      <DependentUpon>frmdanfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDfe.resx">
+      <DependentUpon>FrmDfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdfe2.resx">
+      <DependentUpon>frmdfe2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdownloadnfe.resx">
+      <DependentUpon>frmdownloadnfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpresa.resx">
+      <DependentUpon>FrmEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmenvia_email.resx">
+      <DependentUpon>frmenvia_email.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfornecedor.resx">
+      <DependentUpon>frmfornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminfo.resx">
+      <DependentUpon>frminfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminfocertificado.resx">
+      <DependentUpon>frminfocertificado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminutilizar_nfe.resx">
+      <DependentUpon>frminutilizar_nfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlernfe.resx">
+      <DependentUpon>frmlernfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlicenca.resx">
+      <DependentUpon>frmlicenca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin_windows.resx">
+      <DependentUpon>frmlogin_windows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogsitevb.resx">
+      <DependentUpon>frmLogsitevb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmanifestarind.resx">
+      <DependentUpon>frmmanifestarind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnat.resx">
+      <DependentUpon>frmnat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNCM.resx">
+      <DependentUpon>FrmNCM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnfelocal.resx">
+      <DependentUpon>frmnfelocal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnfe_entrada.resx">
+      <DependentUpon>frmnfe_entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOnedrive.resx">
+      <DependentUpon>frmOnedrive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmoperador.resx">
+      <DependentUpon>frmoperador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmparametro.resx">
+      <DependentUpon>frmparametro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpesquisanfe_Ent.resx">
+      <DependentUpon>frmpesquisanfe_Ent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpesquisanfe_emi.resx">
+      <DependentUpon>frmpesquisanfe_emi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpesquisarnfe.resx">
+      <DependentUpon>frmpesquisarnfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpesquisa_cst.resx">
+      <DependentUpon>frmpesquisa_cst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpesq_onedrive.resx">
+      <DependentUpon>frmpesq_onedrive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmportalnfe.resx">
+      <DependentUpon>frmportalnfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprincipal.resx">
+      <DependentUpon>frmprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduto.resx">
+      <DependentUpon>FrmProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmresult_validacao.resx">
+      <DependentUpon>frmresult_validacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmretdowload.resx">
+      <DependentUpon>frmretdowload.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmretmanifest.resx">
+      <DependentUpon>frmretmanifest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsintegravb.resx">
+      <DependentUpon>frmsintegravb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstatus.resx">
+      <DependentUpon>frmstatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtela_cert.resx">
+      <DependentUpon>frmtela_cert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvisualizar_xml.resx">
+      <DependentUpon>frmvisualizar_xml.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmwebservice.resx">
+      <DependentUpon>frmwebservice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmxml.resx">
+      <DependentUpon>frmxml.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmxml_nfe.resx">
+      <DependentUpon>frmxml_nfe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bematech.resx">
+      <DependentUpon>frm_bematech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_difalSG.resx">
+      <DependentUpon>frm_difalSG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_envNFCe.resx">
+      <DependentUpon>frm_envNFCe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_import.resx">
+      <DependentUpon>frm_import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_imp_ncm.resx">
+      <DependentUpon>frm_imp_ncm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pesquisacte.resx">
+      <DependentUpon>frm_pesquisacte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_visualiza_rel.resx">
+      <DependentUpon>frm_visualiza_rel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcert.resx">
+      <DependentUpon>frmcert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Self_host\frmurl.resx">
+      <DependentUpon>frmurl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ws02.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ws02.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetDFe.xsc">
+      <DependentUpon>DataSetDFe.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDFe.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDFe.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSetDFe.xss">
+      <DependentUpon>DataSetDFe.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dfe-ico.ico" />
+    <Content Include="DFe.ico" />
+    <None Include="Resources\windows_101.jpg" />
+    <None Include="Resources\windows_10.png" />
+    <None Include="Resources\desligado.png" />
+    <None Include="Resources\ligado.png" />
+    <None Include="Resources\ONLINE1.png" />
+    <None Include="Resources\ONLINE.png" />
+    <None Include="Resources\mail_sendnfe.png" />
+    <None Include="Resources\database-import.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\magnifier.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\tick1.png" />
+    <None Include="Resources\door-open-in.png" />
+    <None Include="Resources\certif11.png" />
+    <None Include="Resources\find-new-users.ico" />
+    <None Include="Resources\check.ico" />
+    <None Include="Resources\import.ico" />
+    <None Include="Resources\icq-occupied.ico" />
+    <None Include="Resources\file1.ico" />
+    <None Include="Resources\lixeira.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\impressao.png" />
+    <None Include="Resources\magnifier-left.png" />
+    <None Include="Resources\cce2.png" />
+    <None Include="Resources\cce.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\Delete1.png" />
+    <None Include="Resources\power.png" />
+    <None Include="Resources\on.png" />
+    <None Include="Resources\off1.jpg" />
+    <None Include="Resources\Status-online-icon.png" />
+    <None Include="Resources\Sped-Planet-ECD1.jpg" />
+    <None Include="Resources\sped1.jpg" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\tick.png" />
+    <None Include="Resources\modificar.png" />
+    <None Include="Resources\delete.ico" />
+    <None Include="Resources\file.ico" />
+    <None Include="Resources\CEU.jpg" />
+    <None Include="Resources\Barra Progress.gif" />
+    <None Include="Resources\Barra Progress1.gif" />
+    <None Include="Resources\Barra Progress2.gif" />
+    <None Include="Resources\Barra Status.gif" />
+    <None Include="Resources\azul-degrade.jpg" />
+    <None Include="Resources\block.ico" />
+    <None Include="Resources\Add.png" />
+    <None Include="Resources\application-sidebar-list.png" />
+    <Content Include="Resources\cancelar.png" />
+    <None Include="Resources\progress2.gif" />
+    <None Include="Resources\progressos.gif" />
+    <None Include="Resources\loading-26.gif" />
+    <None Include="Resources\loading-35.gif" />
+    <None Include="Resources\conec_off.jpg" />
+    <None Include="Resources\conec_on.jpg" />
+    <None Include="Resources\certif.png" />
+    <None Include="Resources\icons online.ico" />
+    <None Include="Resources\off.jpg" />
+    <None Include="packages.config" />
+    <None Include="Resources\images_ONs_icon.png" />
+    <None Include="Resources\cert-img.jpg" />
+    <None Include="Resources\certificado-ima.jpg" />
+    <None Include="Resources\Ynos-blog-precificacao.jpg" />
+    <None Include="Resources\Como-montar-uma-planilha-para-auxiliar-na-formação-de-preço.jpg" />
+    <None Include="Resources\email-logo.png" />
+    <None Include="Resources\gradiente-tendencia-cover.png" />
+    <None Include="Resources\sped.jpg" />
+    <None Include="Resources\Sped-Planet-ECD.jpg" />
+    <None Include="Resources\certif1.png" />
+    <None Include="Resources\WEB-DIGITAL %281%29.jpg" />
+    <None Include="Resources\WEB-DIGITAL1.jpg" />
+    <None Include="Resources\WEB-DIGITAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="JRO">
+      <Guid>{AC3B8B4C-B6CA-11D1-9F31-00C04FC29D52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
