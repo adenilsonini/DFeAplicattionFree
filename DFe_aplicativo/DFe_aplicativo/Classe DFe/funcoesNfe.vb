@@ -23,6 +23,8 @@ Imports Newtonsoft.Json
 Imports System.IO.Compression
 Imports System.Xml.Schema
 Imports System.Management
+Imports Org.BouncyCastle.Crypto.Agreement
+Imports System.Threading.Tasks
 
 Public Module funcoesNfe
 
@@ -1565,6 +1567,20 @@ Public Module funcoesNfe
         Return xmlDocument
     End Function
 
+    Public Async Function DeserializarNFeAsync(Of T As {Class, New})(ByVal xml As String) As Task(Of T)
+        Try
+            ' Executa a desserialização em uma thread separada para não travar a UI
+            Return Await Task.Run(Function()
+                                      Using stringReader As New StringReader(xml)
+                                          Dim serializer As New XmlSerializer(GetType(T))
+                                          Return DirectCast(serializer.Deserialize(stringReader), T)
+                                      End Using
+                                  End Function)
+        Catch ex As Exception
+            ' Relança a exceção para ser tratada por quem chamou a função
+            Throw
+        End Try
+    End Function
     Public Function DeserializarNFe(Of T As {Class, New})(ByVal xml As String) As T
         Dim xmlDocument As XmlDocument = New XmlDocument()
         Dim obj1 As T = Nothing
@@ -1936,6 +1952,21 @@ Public Module funcoesNfe
         Return Encoding.UTF8.GetString(byteArray)
     End Function
 
+    Public Async Function DecompressGZipAsync(ByVal bytes As Byte()) As Task(Of String)
+        Using inputMemoryStream As New MemoryStream(bytes)
+            Using outputMemoryStream As New MemoryStream()
+                ' GZipStream configurado para descompressão
+                Using gzipStream As New GZipStream(inputMemoryStream, CompressionMode.Decompress)
+                    ' Copia os dados descompactados para o stream de saída de forma assíncrona
+                    Await gzipStream.CopyToAsync(outputMemoryStream)
+                End Using
+
+                ' Converte o stream de saída para array de bytes e depois para string
+                Dim decompressedBytes As Byte() = outputMemoryStream.ToArray()
+                Return Encoding.UTF8.GetString(decompressedBytes)
+            End Using
+        End Using
+    End Function
     Function DecompressGZip(ByVal bytes As Byte()) As String
         Dim byteArray As Byte()
 

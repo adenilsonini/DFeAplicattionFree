@@ -17,7 +17,7 @@ Imports System.Security.Cryptography
 
 Public Class frmdfe2
     Dim controleExec As Integer, HoraExeDfe As String
-    Dim versao_sist As String = "DFe/Local  |  Versao: " & Assembly.GetExecutingAssembly.GetName.Version.ToString & "   |  09/02/2026  | Empresa Conectada: "
+    Dim versao_sist As String = "DFe/Local  |  Versao: " & Assembly.GetExecutingAssembly.GetName.Version.ToString & "   |  14/04/2026  | Empresa Conectada: "
     Dim logar As Boolean
     Dim nrecibo_cont As String, xmotivo_cont As String, cstat_cont As String, nprot_cont As String
     Dim xmlAssinado As XmlDocument
@@ -406,7 +406,7 @@ Public Class frmdfe2
                 salvar_nsucte()
                 CalcucarHora()
 
-                If chkmanifes.Checked = True Then
+                If chkmanifes.Checked = True And chkBucketS3.Checked = False Then
 
                     gerar_evento_lote_cont()
 
@@ -559,6 +559,55 @@ Public Class frmdfe2
         Return valor
     End Function
 
+    Private Async Function resnfeAsync(ByVal xmlret As XmlDocument) As Task
+        ' Usamos Task.Run para processar o XML em uma thread separada
+        ' Isso evita lentidão se houver muitos nós para processar
+        Await Task.Run(Sub()
+                           Dim xmllist As System.Xml.XmlNodeList
+                           ' Importante: Certifique-se que o xmlnsManager está acessível aqui
+                           xmlnsManager.AddNamespace("bk", "http://www.portalfiscal.inf.br/nfe")
+                           xmllist = xmlret.SelectNodes("//bk:resNFe", xmlnsManager)
+
+                           For Each xmlnode As System.Xml.XmlNode In xmllist
+                               ' Lógica de conversão de Tipos
+                               Dim tiponfe As String = xmlnode("tpNF").InnerText
+                               If tiponfe = "0" Then tiponfe = "0-NFe Entrada"
+                               If tiponfe = "1" Then tiponfe = "1-NFe Saida"
+
+                               ' Lógica de Situação
+                               Dim SitNFe As String = xmlnode("cSitNFe").InnerText
+                               Select Case SitNFe
+                                   Case "1" : SitNFe = "NF-e autorizada"
+                                   Case "2" : SitNFe = "Uso denegado"
+                                   Case "3" : SitNFe = "NF-e cancelada"
+                               End Select
+
+                               ' CNPJ ou CPF
+                               Dim CNPJ_ret As String = ""
+                               If xmlnode("CNPJ") IsNot Nothing Then
+                                   CNPJ_ret = xmlnode("CNPJ").InnerText
+                               ElseIf xmlnode("CPF") IsNot Nothing Then
+                                   CNPJ_ret = xmlnode("CPF").InnerText
+                               End If
+
+                               ' Se Salvar_NFe for síncrono, ele roda aqui na thread secundária sem travar a UI
+                               Dim ret As Boolean = Salvar_NFe("1", xmlnode("chNFe").InnerText, xmlnode("xNome").InnerText, CNPJ_ret, xmlnode("IE").InnerText, xmlnode("vNF").InnerText, Convert.ToDateTime(xmlnode("dhRecbto").InnerText).ToString("dd/MM/yyyy HH:mm:ss"), tiponfe, "", Convert.ToDateTime(xmlnode("dhEmi").InnerText).ToString("dd/MM/yyyy"))
+
+                               ' IMPORTANTE: Atualização de UI (DataGridView) precisa do Invoke
+                               ' Como estamos dentro de uma Task, o Invoke é obrigatório
+                               Me.Invoke(Sub()
+                                             dgvnfe.Rows.Add("NF-e", CNPJ_ret, xmlnode("xNome").InnerText,
+                                                       Convert.ToDateTime(xmlnode("dhEmi").InnerText).ToString("dd/MM/yyyy"),
+                                                       format_val_mysql_ret(xmlnode("vNF").InnerText),
+                                                       Convert.ToDateTime(xmlnode("dhRecbto").InnerText).ToString("dd/MM/yyyy HH:mm:ss"),
+                                                       SitNFe, tiponfe,
+                                                       xmlnode("chNFe").InnerText, xmlnode("IE").InnerText,
+                                                       "Sem manifestacao", "", ret, cnpj_cert)
+                                         End Sub)
+                           Next
+                       End Sub)
+    End Function
+
     Private Sub resnfe(ByVal xmlret As XmlDocument)
         Dim xmllist As System.Xml.XmlNodeList
         Dim xmlnode As System.Xml.XmlNode
@@ -610,6 +659,55 @@ Public Class frmdfe2
         Next
     End Sub
 
+    Private Async Function reseventoAsync(ByVal xmlret As XmlDocument) As Task
+        ' Move o processamento para background para não travar a UI
+        Await Task.Run(Sub()
+                           Dim xmllist As System.Xml.XmlNodeList
+                           xmlnsManager.AddNamespace("bk", "http://www.portalfiscal.inf.br/nfe")
+                           xmllist = xmlret.SelectNodes("//bk:procEventoNFe", xmlnsManager)
+
+                           For Each xmlnode As System.Xml.XmlNode In xmllist
+                               ' Navegação segura nos nós do XML
+                               Dim infEvento = xmlnode("evento")("infEvento")
+                               Dim descEvento = infEvento("detEvento")("descEvento").InnerText
+
+                               If descEvento = "Cancelamento" Then
+                                   Dim chaveNFe As String = infEvento("chNFe").InnerText
+                                   Dim nProt As String = infEvento("nProt").InnerText
+
+                                   ' Precisamos do Invoke para ler do Grid ou escrever nele
+                                   Dim result As String = ""
+                                   Me.Invoke(Sub() result = getDataGridViewIndex(chaveNFe))
+
+                                   ' Atualização da Interface
+                                   Me.Invoke(Sub()
+                                                 If result = "R" Then
+                                                     dgvnfe.Rows.Add("", "", "", "", "", "", chaveNFe, "", descEvento, "", "", "", cnpj_cert)
+                                                 Else
+                                                     dgvnfe.Rows.Item(CInt(result)).Cells("situacao_nfe").Value = descEvento
+                                                 End If
+                                             End Sub)
+
+                                   ' Operação de Banco de Dados (Thread de background)
+                                   Try
+                                       conectar_mysqlDFe()
+                                       ' Use parâmetros para evitar SQL Injection e erros de string
+                                       Dim sql As String = "UPDATE NFe SET Status_nfe = 'NFe cancelada', nprot_canc = @nprot WHERE Chave_nfe = @chave"
+                                       Using insertSQL As New MySqlCommand(sql, oConn)
+                                           insertSQL.Parameters.AddWithValue("@nprot", nProt)
+                                           insertSQL.Parameters.AddWithValue("@chave", chaveNFe)
+                                           insertSQL.ExecuteNonQuery()
+                                       End Using
+                                   Catch ex As Exception
+                                       ' Trate o erro de banco aqui
+                                   Finally
+                                       If oConn.State = ConnectionState.Open Then oConn.Close()
+                                   End Try
+                               End If
+                           Next
+                       End Sub)
+    End Function
+
     Private Sub resevento(ByVal xmlret As XmlDocument)
         Dim xmllist As System.Xml.XmlNodeList
         Dim xmlnode As System.Xml.XmlNode
@@ -640,6 +738,89 @@ Public Class frmdfe2
 
         Next
     End Sub
+
+    Private Async Function resprotnfeAsync(ByVal xmlret As XmlDocument) As Task
+        ' Captura o estado de controles da UI antes de ir para a thread de background
+        Dim salvarXmlLocal As Boolean = chkxml.Checked
+
+        Await Task.Run(Sub()
+                           Dim xmllist As System.Xml.XmlNodeList
+                           Dim xmllist2 As System.Xml.XmlNodeList
+                           Dim dataprot As Date
+                           Dim chave As String = ""
+
+                           ' 1. Extração do Protocolo
+                           xmllist2 = xmlret.GetElementsByTagName("infProt")
+                           For Each xmlnode2 As System.Xml.XmlNode In xmllist2
+                               dataprot = Convert.ToDateTime(xmlnode2("dhRecbto").InnerText)
+                               chave = xmlnode2("chNFe").InnerText
+                           Next
+
+                           ' 2. Processamento da NFe
+                           xmllist = xmlret.GetElementsByTagName("infNFe")
+                           For Each xmlnode As System.Xml.XmlNode In xmllist
+
+                               ' Precisamos do Invoke para consultar o índice no Grid
+                               Dim result As String = ""
+                               Me.Invoke(Sub() result = getDataGridViewIndex(chave))
+
+                               ' Lógica de Tipo de NFe
+                               Dim tiponfe As String = xmlnode("ide")("tpNF").InnerText
+                               tiponfe = If(tiponfe = "0", "0-NFe Entrada", "1-NFe Saida")
+
+                               ' Lógica de CNPJ/CPF
+                               Dim cn As String = If(xmlnode("emit")("CNPJ") IsNot Nothing,
+                                                xmlnode("emit")("CNPJ").InnerText,
+                                                xmlnode("emit")("CPF").InnerText)
+
+                               If result = "R" Then
+                                   ' --- Fluxo de Inserção Nova ---
+                                   Dim ret As Boolean = Salvar_NFe("2", chave, xmlnode("emit")("xNome").InnerText, cn, xmlnode("emit")("IE").InnerText, xmlnode("total")("ICMSTot")("vNF").InnerText, dataprot.ToString("dd/MM/yyyy HH:mm:ss"), tiponfe, xmlret.OuterXml, Convert.ToDateTime(xmlnode("ide")("dhEmi").InnerText).ToString("dd/MM/yyyy"))
+
+                                   Me.Invoke(Sub()
+                                                 dgvnfe.Rows.Add("NF-e/xml", cn, xmlnode("emit")("xNome").InnerText, Convert.ToDateTime(xmlnode("ide")("dhEmi").InnerText).ToString("dd/MM/yyyy"),
+                                                           format_val_mysql_ret(xmlnode("total")("ICMSTot")("vNF").InnerText), dataprot.ToString("dd/MM/yyyy HH:mm:ss"), "NF-e autorizada",
+                                                           tiponfe, chave, xmlnode("emit")("IE").InnerText, "", xmlret.OuterXml, ret, "false", cnpj_cert)
+                                             End Sub)
+                               Else
+                                   ' --- Fluxo de Atualização ---
+                                   Dim ret As Boolean = Salvar_NFe("5", chave, xmlnode("emit")("xNome").InnerText, cn, xmlnode("emit")("IE").InnerText, xmlnode("total")("ICMSTot")("vNF").InnerText, dataprot.ToString("dd/MM/yyyy HH:mm:ss"), tiponfe, xmlret.OuterXml, Convert.ToDateTime(xmlnode("ide")("dhEmi").InnerText).ToString("dd/MM/yyyy"))
+                                   Salvar_NFe_site("5", chave, xmlnode("emit")("xNome").InnerText, cn, xmlnode("emit")("IE").InnerText, xmlnode("total")("ICMSTot")("vNF").InnerText, dataprot.ToString("dd/MM/yyyy HH:mm:ss"), tiponfe, xmlret.OuterXml, Convert.ToDateTime(xmlnode("ide")("dhEmi").InnerText).ToString("dd/MM/yyyy"))
+
+                                   Me.Invoke(Sub()
+                                                 Dim idx As Integer = CInt(result)
+                                                 dgvnfe.Rows.Item(idx).Cells(0).Value = "NF-e/xml"
+                                                 dgvnfe.Rows.Item(idx).Cells("xml_nfe").Value = xmlret.OuterXml
+                                                 dgvnfe.Rows.Item(idx).Cells("situacao_nfe").Value = ""
+                                                 dgvnfe.Rows.Item(idx).Cells("par_salvo").Value = ret
+                                                 dgvnfe.Rows.Item(idx).Cells("custo_griddgvnfe").Value = "false"
+                                             End Sub)
+                               End If
+
+                               ' 3. Salvar XML em disco
+                               If salvarXmlLocal Then
+                                   Try
+                                       Dim dataemi As Date = Convert.ToDateTime(xmlnode("ide")("dhEmi").InnerText)
+                                       Dim ano As String = dataemi.ToString("yyyy")
+                                       Dim mes As String = dataemi.ToString("MM") & "-" & System.Globalization.DateTimeFormatInfo.CurrentInfo.GetMonthName(dataemi.Month)
+
+                                       ' Lógica simplificada de diretório
+                                       Dim caminhoBase As String = If(arquivoIni.Read("salva_xml_Plocal", "DFe") = "True",
+                                                                 Application.StartupPath & "\xml_tempRFB",
+                                                                 arquivoIni.Read("caminho_xmlnfe", "DFe"))
+
+                                       Dim diretorioFinal As String = Path.Combine(caminhoBase, empresa.sCNPJ, ano, mes)
+
+                                       If Not Directory.Exists(diretorioFinal) Then Directory.CreateDirectory(diretorioFinal)
+
+                                       xmlret.Save(Path.Combine(diretorioFinal, chave & ".xml"))
+                                   Catch ex As Exception
+                                       ' Silenciar ou logar erro de salvamento de arquivo
+                                   End Try
+                               End If
+                           Next
+                       End Sub)
+    End Function
 
     Private Sub resprotnfe(ByVal xmlret As XmlDocument)
         Dim xmllist As System.Xml.XmlNodeList
@@ -1960,10 +2141,10 @@ Public Class frmdfe2
     Private Async Sub bntpesqDFe_Click(sender As Object, e As EventArgs) Handles bntpesqDFe.Click
 
         If chkBucketS3.Checked = True Then
-
             ' 1. Executa e AGUARDA terminar completamente
+            Pic_prog.Visible = True
             Await PesquisarBucketS3Dfe()
-
+            Pic_prog.Visible = False
             ' 2. Agora que terminou, inicia a próxima parte
             Control.CheckForIllegalCrossThreadCalls = False
             rotina_dfe = New Thread(AddressOf DFeconsulta_CTe4)
@@ -1985,7 +2166,6 @@ Public Class frmdfe2
         End If
 
     End Sub
-
     Private Sub Texecucao_dfe_Tick(sender As Object, e As EventArgs) Handles Texecucao_dfe.Tick
 
         Dim dataHoraPar As DateTime = Convert.ToDateTime(lblhoraprog.Text)
@@ -5506,7 +5686,7 @@ Public Class frmdfe2
         Try
             Dim chavesParaDeletar As New List(Of KeyVersion)
             Dim retDFE As retDistDFeInt
-            Dim bucketName As String = "dfe-xml-rfb"
+            Dim bucketName As String = "dfe-xml-rfb-02"
             Dim listaXmls As New List(Of String)
 
             Dim config = New AmazonS3Config With {
@@ -5552,19 +5732,19 @@ Public Class frmdfe2
                 ' 2. PROCESSAMENTO (SUA LÓGICA DE NEGÓCIO)
                 Dim count = 1
                 For Each docS3 As String In listaXmls
-                    retDFE = funcoesNfe.DeserializarNFe(Of retDistDFeInt)(docS3)
+                    retDFE = Await funcoesNfe.DeserializarNFeAsync(Of retDistDFeInt)(docS3)
                     txtinfodfe.Text = $"Processando registro encontrados no bucket S3 DFe: {count} de {listaXmls.Count}"
                     txtinfodfe.Refresh()
                     count += 1
 
                     For Each doc In retDFE.loteDistDFeInt
-                        xmldoc.LoadXml(DecompressGZip(doc.Value))
+                        xmldoc.LoadXml(Await DecompressGZipAsync(doc.Value))
                         total_reg()
 
                         ' Suas validações de schema...
-                        If doc.schema.ToLower().StartsWith("resnfe") Then resnfe(xmldoc)
-                        If doc.schema.ToLower().Contains("proceventonfe") Then resprotnfe(xmldoc)
-                        If doc.schema.ToLower().StartsWith("procnfe") Then resprotnfe(xmldoc)
+                        If doc.schema.ToLower().StartsWith("resnfe") Then Await resnfeAsync(xmldoc)
+                        If doc.schema.ToLower().Contains("proceventonfe") Then Await resprotnfeAsync(xmldoc)
+                        If doc.schema.ToLower().StartsWith("procnfe") Then Await resprotnfeAsync(xmldoc)
                     Next
                 Next
 
