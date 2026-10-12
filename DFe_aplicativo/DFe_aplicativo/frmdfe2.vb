@@ -5766,7 +5766,7 @@ Public Class frmdfe2
 
             txtinfodfe.Text = "Pesquisa realizada em: " & DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
 
-            MessageBox.Show("Leitura e limpeza realizadas com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ''  MessageBox.Show("Leitura e limpeza realizadas com sucesso!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         Catch ex As AmazonS3Exception
             txtinfodfe.Text = $"Erro S3: {ex.ErrorCode} - {ex.Message}"

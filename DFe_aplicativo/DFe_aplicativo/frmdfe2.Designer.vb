@@ -280,10 +280,11 @@ Partial Class frmdfe2
         Me.Tabdfe.Controls.Add(Me.TabPage1_dfe)
         Me.Tabdfe.Controls.Add(Me.TabPage2)
         Me.Tabdfe.Controls.Add(Me.TabPage1)
-        Me.Tabdfe.Location = New System.Drawing.Point(5, 5)
+        Me.Tabdfe.Location = New System.Drawing.Point(7, 6)
+        Me.Tabdfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Tabdfe.Name = "Tabdfe"
         Me.Tabdfe.SelectedIndex = 0
-        Me.Tabdfe.Size = New System.Drawing.Size(1090, 667)
+        Me.Tabdfe.Size = New System.Drawing.Size(1453, 821)
         Me.Tabdfe.TabIndex = 0
         '
         'TabPage1_dfe
@@ -297,10 +298,11 @@ Partial Class frmdfe2
         Me.TabPage1_dfe.Controls.Add(Me.Grouper3)
         Me.TabPage1_dfe.Controls.Add(Me.Grouper2)
         Me.TabPage1_dfe.Controls.Add(Me.Button1)
-        Me.TabPage1_dfe.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1_dfe.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1_dfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1_dfe.Name = "TabPage1_dfe"
-        Me.TabPage1_dfe.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1_dfe.Size = New System.Drawing.Size(1082, 641)
+        Me.TabPage1_dfe.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1_dfe.Size = New System.Drawing.Size(1445, 792)
         Me.TabPage1_dfe.TabIndex = 0
         Me.TabPage1_dfe.Text = "NFe/CTe   "
         Me.TabPage1_dfe.UseVisualStyleBackColor = True
@@ -323,15 +325,16 @@ Partial Class frmdfe2
         Me.Grouper5.CustomGroupBoxColor = System.Drawing.Color.White
         Me.Grouper5.GroupImage = Nothing
         Me.Grouper5.GroupTitle = ""
-        Me.Grouper5.Location = New System.Drawing.Point(3, 135)
+        Me.Grouper5.Location = New System.Drawing.Point(4, 166)
+        Me.Grouper5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Grouper5.Name = "Grouper5"
-        Me.Grouper5.Padding = New System.Windows.Forms.Padding(20)
+        Me.Grouper5.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper5.PaintGroupBox = False
         Me.Grouper5.RoundCorners = 10
         Me.Grouper5.ShadowColor = System.Drawing.Color.DarkGray
         Me.Grouper5.ShadowControl = True
         Me.Grouper5.ShadowThickness = 3
-        Me.Grouper5.Size = New System.Drawing.Size(1073, 279)
+        Me.Grouper5.Size = New System.Drawing.Size(1431, 343)
         Me.Grouper5.TabIndex = 114
         '
         'Label8
@@ -340,9 +343,10 @@ Partial Class frmdfe2
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(764, 12)
+        Me.Label8.Location = New System.Drawing.Point(1019, 15)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 16)
+        Me.Label8.Size = New System.Drawing.Size(72, 20)
         Me.Label8.TabIndex = 119
         Me.Label8.Text = "Faltam:"
         '
@@ -352,9 +356,10 @@ Partial Class frmdfe2
         Me.lblfaltamexec.BackColor = System.Drawing.Color.Transparent
         Me.lblfaltamexec.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblfaltamexec.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblfaltamexec.Location = New System.Drawing.Point(822, 12)
+        Me.lblfaltamexec.Location = New System.Drawing.Point(1096, 15)
+        Me.lblfaltamexec.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblfaltamexec.Name = "lblfaltamexec"
-        Me.lblfaltamexec.Size = New System.Drawing.Size(63, 16)
+        Me.lblfaltamexec.Size = New System.Drawing.Size(81, 20)
         Me.lblfaltamexec.TabIndex = 118
         Me.lblfaltamexec.Text = "00:00:00"
         '
@@ -369,15 +374,16 @@ Partial Class frmdfe2
         Me.panel_chave.CustomGroupBoxColor = System.Drawing.Color.White
         Me.panel_chave.GroupImage = Nothing
         Me.panel_chave.GroupTitle = "Chsve acesso NF-e"
-        Me.panel_chave.Location = New System.Drawing.Point(743, 30)
+        Me.panel_chave.Location = New System.Drawing.Point(991, 37)
+        Me.panel_chave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.panel_chave.Name = "panel_chave"
-        Me.panel_chave.Padding = New System.Windows.Forms.Padding(20)
+        Me.panel_chave.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.panel_chave.PaintGroupBox = False
         Me.panel_chave.RoundCorners = 10
         Me.panel_chave.ShadowColor = System.Drawing.Color.DarkGray
         Me.panel_chave.ShadowControl = True
         Me.panel_chave.ShadowThickness = 3
-        Me.panel_chave.Size = New System.Drawing.Size(320, 61)
+        Me.panel_chave.Size = New System.Drawing.Size(427, 75)
         Me.panel_chave.TabIndex = 114
         Me.panel_chave.Visible = False
         '
@@ -386,86 +392,89 @@ Partial Class frmdfe2
         Me.mskchave.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.mskchave.ContextMenuStrip = Me.ContextMenuStrip1
         Me.mskchave.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
-        Me.mskchave.Location = New System.Drawing.Point(6, 32)
+        Me.mskchave.Location = New System.Drawing.Point(8, 39)
+        Me.mskchave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.mskchave.Mask = "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000"
         Me.mskchave.Name = "mskchave"
-        Me.mskchave.Size = New System.Drawing.Size(305, 20)
+        Me.mskchave.Size = New System.Drawing.Size(405, 22)
         Me.mskchave.TabIndex = 108
         Me.mskchave.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VisualizarNFeToolStripMenuItem, Me.EventosNFeToolStripMenuItem, Me.VisualizarNFePortalNacionalToolStripMenuItem, Me.ConsultaChaveViaWebserviceToolStripMenuItem, Me.SalvarNFeBancoToolStripMenuItem, Me.ConsultaPorNSUToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(240, 136)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(284, 148)
         '
         'VisualizarNFeToolStripMenuItem
         '
         Me.VisualizarNFeToolStripMenuItem.Name = "VisualizarNFeToolStripMenuItem"
-        Me.VisualizarNFeToolStripMenuItem.Size = New System.Drawing.Size(239, 22)
+        Me.VisualizarNFeToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.VisualizarNFeToolStripMenuItem.Text = "Visualizar XML NF-e"
         '
         'EventosNFeToolStripMenuItem
         '
         Me.EventosNFeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CienciaOperacaoToolStripMenuItem, Me.ConfirmacaoOperacaoToolStripMenuItem, Me.DesconhecimentoDaToolStripMenuItem, Me.OperaçãoNãoRealizadaToolStripMenuItem})
         Me.EventosNFeToolStripMenuItem.Name = "EventosNFeToolStripMenuItem"
-        Me.EventosNFeToolStripMenuItem.Size = New System.Drawing.Size(239, 22)
+        Me.EventosNFeToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.EventosNFeToolStripMenuItem.Text = "Eventos NF-e"
         '
         'CienciaOperacaoToolStripMenuItem
         '
         Me.CienciaOperacaoToolStripMenuItem.Name = "CienciaOperacaoToolStripMenuItem"
-        Me.CienciaOperacaoToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.CienciaOperacaoToolStripMenuItem.Size = New System.Drawing.Size(305, 26)
         Me.CienciaOperacaoToolStripMenuItem.Text = "Ciência da Operação"
         '
         'ConfirmacaoOperacaoToolStripMenuItem
         '
         Me.ConfirmacaoOperacaoToolStripMenuItem.Name = "ConfirmacaoOperacaoToolStripMenuItem"
-        Me.ConfirmacaoOperacaoToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.ConfirmacaoOperacaoToolStripMenuItem.Size = New System.Drawing.Size(305, 26)
         Me.ConfirmacaoOperacaoToolStripMenuItem.Text = "Confirmação da Operação"
         '
         'DesconhecimentoDaToolStripMenuItem
         '
         Me.DesconhecimentoDaToolStripMenuItem.Name = "DesconhecimentoDaToolStripMenuItem"
-        Me.DesconhecimentoDaToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.DesconhecimentoDaToolStripMenuItem.Size = New System.Drawing.Size(305, 26)
         Me.DesconhecimentoDaToolStripMenuItem.Text = "Desconhecimento da Operação "
         '
         'OperaçãoNãoRealizadaToolStripMenuItem
         '
         Me.OperaçãoNãoRealizadaToolStripMenuItem.Name = "OperaçãoNãoRealizadaToolStripMenuItem"
-        Me.OperaçãoNãoRealizadaToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.OperaçãoNãoRealizadaToolStripMenuItem.Size = New System.Drawing.Size(305, 26)
         Me.OperaçãoNãoRealizadaToolStripMenuItem.Text = "Operação Não Realizada"
         '
         'VisualizarNFePortalNacionalToolStripMenuItem
         '
         Me.VisualizarNFePortalNacionalToolStripMenuItem.Name = "VisualizarNFePortalNacionalToolStripMenuItem"
-        Me.VisualizarNFePortalNacionalToolStripMenuItem.Size = New System.Drawing.Size(239, 22)
+        Me.VisualizarNFePortalNacionalToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.VisualizarNFePortalNacionalToolStripMenuItem.Text = "Visualizar NF-e Portal Nacional"
         '
         'ConsultaChaveViaWebserviceToolStripMenuItem
         '
         Me.ConsultaChaveViaWebserviceToolStripMenuItem.Name = "ConsultaChaveViaWebserviceToolStripMenuItem"
-        Me.ConsultaChaveViaWebserviceToolStripMenuItem.Size = New System.Drawing.Size(239, 22)
+        Me.ConsultaChaveViaWebserviceToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.ConsultaChaveViaWebserviceToolStripMenuItem.Text = "Consulta Chave Via Webservice"
         '
         'SalvarNFeBancoToolStripMenuItem
         '
         Me.SalvarNFeBancoToolStripMenuItem.Name = "SalvarNFeBancoToolStripMenuItem"
-        Me.SalvarNFeBancoToolStripMenuItem.Size = New System.Drawing.Size(239, 22)
+        Me.SalvarNFeBancoToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.SalvarNFeBancoToolStripMenuItem.Text = "Salvar NFe Banco"
         '
         'ConsultaPorNSUToolStripMenuItem
         '
         Me.ConsultaPorNSUToolStripMenuItem.Name = "ConsultaPorNSUToolStripMenuItem"
-        Me.ConsultaPorNSUToolStripMenuItem.Size = New System.Drawing.Size(239, 22)
+        Me.ConsultaPorNSUToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.ConsultaPorNSUToolStripMenuItem.Text = "Consulta Por NSU"
         '
         'LinkLabel5
         '
         Me.LinkLabel5.AutoSize = True
-        Me.LinkLabel5.Location = New System.Drawing.Point(994, 14)
+        Me.LinkLabel5.Location = New System.Drawing.Point(1325, 17)
+        Me.LinkLabel5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(64, 13)
+        Me.LinkLabel5.Size = New System.Drawing.Size(79, 16)
         Me.LinkLabel5.TabIndex = 115
         Me.LinkLabel5.TabStop = True
         Me.LinkLabel5.Text = "Chave NF-e"
@@ -476,9 +485,10 @@ Partial Class frmdfe2
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(3, 12)
+        Me.Label3.Location = New System.Drawing.Point(4, 15)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(226, 16)
+        Me.Label3.Size = New System.Drawing.Size(274, 20)
         Me.Label3.TabIndex = 117
         Me.Label3.Text = "Arquivos das NF-e encontrados"
         '
@@ -499,6 +509,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvnfe.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvnfe.ColumnHeadersHeight = 29
         Me.dgvnfe.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column20, Me.cnpj_nfe, Me.Nome_emi_nfe, Me.Data_emi_nfe, Me.vlr_nfe, Me.data_prot, Me.sit_nfe, Me.tipo_nfe, Me.chave_nfe, Me.ie_nfe, Me.situacao_nfe, Me.xml_nfe, Me.par_salvo, Me.custo_griddgvnfe, Me.cnpj_dest_grid})
         Me.dgvnfe.ContextMenuStrip = Me.ContextMenuStrip1
         DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -511,7 +522,8 @@ Partial Class frmdfe2
         Me.dgvnfe.DefaultCellStyle = DataGridViewCellStyle7
         Me.dgvnfe.EnableHeadersVisualStyles = False
         Me.dgvnfe.GridColor = System.Drawing.Color.Lime
-        Me.dgvnfe.Location = New System.Drawing.Point(6, 30)
+        Me.dgvnfe.Location = New System.Drawing.Point(8, 37)
+        Me.dgvnfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvnfe.Name = "dgvnfe"
         Me.dgvnfe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -528,12 +540,13 @@ Partial Class frmdfe2
         Me.dgvnfe.RowsDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvnfe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvnfe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvnfe.Size = New System.Drawing.Size(1057, 239)
+        Me.dgvnfe.Size = New System.Drawing.Size(1409, 294)
         Me.dgvnfe.TabIndex = 8
         '
         'Column20
         '
         Me.Column20.HeaderText = "Tipo Ret."
+        Me.Column20.MinimumWidth = 6
         Me.Column20.Name = "Column20"
         Me.Column20.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Column20.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
@@ -542,12 +555,15 @@ Partial Class frmdfe2
         'cnpj_nfe
         '
         Me.cnpj_nfe.HeaderText = "CNPJ"
+        Me.cnpj_nfe.MinimumWidth = 6
         Me.cnpj_nfe.Name = "cnpj_nfe"
         Me.cnpj_nfe.Visible = False
+        Me.cnpj_nfe.Width = 125
         '
         'Nome_emi_nfe
         '
         Me.Nome_emi_nfe.HeaderText = "Nome Emitente"
+        Me.Nome_emi_nfe.MinimumWidth = 6
         Me.Nome_emi_nfe.Name = "Nome_emi_nfe"
         Me.Nome_emi_nfe.ReadOnly = True
         Me.Nome_emi_nfe.Width = 345
@@ -558,6 +574,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle3.NullValue = Nothing
         Me.Data_emi_nfe.DefaultCellStyle = DataGridViewCellStyle3
         Me.Data_emi_nfe.HeaderText = "Data Emissão"
+        Me.Data_emi_nfe.MinimumWidth = 6
         Me.Data_emi_nfe.Name = "Data_emi_nfe"
         Me.Data_emi_nfe.ReadOnly = True
         Me.Data_emi_nfe.Width = 80
@@ -567,6 +584,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         Me.vlr_nfe.DefaultCellStyle = DataGridViewCellStyle4
         Me.vlr_nfe.HeaderText = "Valor NFe"
+        Me.vlr_nfe.MinimumWidth = 6
         Me.vlr_nfe.Name = "vlr_nfe"
         Me.vlr_nfe.ReadOnly = True
         Me.vlr_nfe.Width = 118
@@ -574,6 +592,7 @@ Partial Class frmdfe2
         'data_prot
         '
         Me.data_prot.HeaderText = "Data Hora Autorizacão"
+        Me.data_prot.MinimumWidth = 6
         Me.data_prot.Name = "data_prot"
         Me.data_prot.ReadOnly = True
         Me.data_prot.Width = 120
@@ -584,6 +603,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.sit_nfe.DefaultCellStyle = DataGridViewCellStyle5
         Me.sit_nfe.HeaderText = "Situação NFe"
+        Me.sit_nfe.MinimumWidth = 6
         Me.sit_nfe.Name = "sit_nfe"
         Me.sit_nfe.ReadOnly = True
         Me.sit_nfe.Width = 87
@@ -593,6 +613,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.tipo_nfe.DefaultCellStyle = DataGridViewCellStyle6
         Me.tipo_nfe.HeaderText = "Tipo NFe"
+        Me.tipo_nfe.MinimumWidth = 6
         Me.tipo_nfe.Name = "tipo_nfe"
         Me.tipo_nfe.ReadOnly = True
         Me.tipo_nfe.Width = 85
@@ -600,44 +621,57 @@ Partial Class frmdfe2
         'chave_nfe
         '
         Me.chave_nfe.HeaderText = "Chave acesso"
+        Me.chave_nfe.MinimumWidth = 6
         Me.chave_nfe.Name = "chave_nfe"
         Me.chave_nfe.Visible = False
+        Me.chave_nfe.Width = 125
         '
         'ie_nfe
         '
         Me.ie_nfe.HeaderText = "insc estadual"
+        Me.ie_nfe.MinimumWidth = 6
         Me.ie_nfe.Name = "ie_nfe"
         Me.ie_nfe.Visible = False
+        Me.ie_nfe.Width = 125
         '
         'situacao_nfe
         '
         Me.situacao_nfe.HeaderText = "Status NF-e"
+        Me.situacao_nfe.MinimumWidth = 6
         Me.situacao_nfe.Name = "situacao_nfe"
         Me.situacao_nfe.Width = 120
         '
         'xml_nfe
         '
         Me.xml_nfe.HeaderText = "xml nfe"
+        Me.xml_nfe.MinimumWidth = 6
         Me.xml_nfe.Name = "xml_nfe"
         Me.xml_nfe.Visible = False
+        Me.xml_nfe.Width = 125
         '
         'par_salvo
         '
         Me.par_salvo.HeaderText = "par salvo"
+        Me.par_salvo.MinimumWidth = 6
         Me.par_salvo.Name = "par_salvo"
         Me.par_salvo.Visible = False
+        Me.par_salvo.Width = 125
         '
         'custo_griddgvnfe
         '
         Me.custo_griddgvnfe.HeaderText = "custo_griddgvnfe"
+        Me.custo_griddgvnfe.MinimumWidth = 6
         Me.custo_griddgvnfe.Name = "custo_griddgvnfe"
         Me.custo_griddgvnfe.Visible = False
+        Me.custo_griddgvnfe.Width = 125
         '
         'cnpj_dest_grid
         '
         Me.cnpj_dest_grid.HeaderText = "cnpj_dest"
+        Me.cnpj_dest_grid.MinimumWidth = 6
         Me.cnpj_dest_grid.Name = "cnpj_dest_grid"
         Me.cnpj_dest_grid.Visible = False
+        Me.cnpj_dest_grid.Width = 125
         '
         'Label146
         '
@@ -645,9 +679,10 @@ Partial Class frmdfe2
         Me.Label146.BackColor = System.Drawing.Color.Transparent
         Me.Label146.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label146.ForeColor = System.Drawing.Color.Black
-        Me.Label146.Location = New System.Drawing.Point(341, 11)
+        Me.Label146.Location = New System.Drawing.Point(455, 14)
+        Me.Label146.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label146.Name = "Label146"
-        Me.Label146.Size = New System.Drawing.Size(260, 16)
+        Me.Label146.Size = New System.Drawing.Size(320, 20)
         Me.Label146.TabIndex = 67
         Me.Label146.Text = "Proxima Consulta será realizada em:"
         '
@@ -657,9 +692,10 @@ Partial Class frmdfe2
         Me.lblhoraprog.BackColor = System.Drawing.Color.Transparent
         Me.lblhoraprog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblhoraprog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lblhoraprog.Location = New System.Drawing.Point(608, 12)
+        Me.lblhoraprog.Location = New System.Drawing.Point(811, 15)
+        Me.lblhoraprog.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblhoraprog.Name = "lblhoraprog"
-        Me.lblhoraprog.Size = New System.Drawing.Size(141, 16)
+        Me.lblhoraprog.Size = New System.Drawing.Size(179, 20)
         Me.lblhoraprog.TabIndex = 66
         Me.lblhoraprog.Text = "01/01/0001 00:00:00"
         '
@@ -681,22 +717,24 @@ Partial Class frmdfe2
         Me.Grouper4.CustomGroupBoxColor = System.Drawing.Color.White
         Me.Grouper4.GroupImage = Nothing
         Me.Grouper4.GroupTitle = ""
-        Me.Grouper4.Location = New System.Drawing.Point(3, 411)
+        Me.Grouper4.Location = New System.Drawing.Point(4, 506)
+        Me.Grouper4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Grouper4.Name = "Grouper4"
-        Me.Grouper4.Padding = New System.Windows.Forms.Padding(20)
+        Me.Grouper4.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper4.PaintGroupBox = False
         Me.Grouper4.RoundCorners = 10
         Me.Grouper4.ShadowColor = System.Drawing.Color.DarkGray
         Me.Grouper4.ShadowControl = True
         Me.Grouper4.ShadowThickness = 3
-        Me.Grouper4.Size = New System.Drawing.Size(1076, 227)
+        Me.Grouper4.Size = New System.Drawing.Size(1435, 279)
         Me.Grouper4.TabIndex = 118
         '
         'Button17
         '
-        Me.Button17.Location = New System.Drawing.Point(263, 11)
+        Me.Button17.Location = New System.Drawing.Point(351, 14)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(75, 23)
+        Me.Button17.Size = New System.Drawing.Size(100, 28)
         Me.Button17.TabIndex = 118
         Me.Button17.Text = "gerar xml"
         Me.Button17.UseVisualStyleBackColor = True
@@ -708,18 +746,20 @@ Partial Class frmdfe2
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(361, 14)
+        Me.Label4.Location = New System.Drawing.Point(481, 17)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(122, 16)
+        Me.Label4.Size = New System.Drawing.Size(148, 20)
         Me.Label4.TabIndex = 104
         Me.Label4.Text = "Retorno do CT-e"
         '
         'lbltimer_m
         '
         Me.lbltimer_m.AutoSize = True
-        Me.lbltimer_m.Location = New System.Drawing.Point(99, 14)
+        Me.lbltimer_m.Location = New System.Drawing.Point(132, 17)
+        Me.lbltimer_m.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbltimer_m.Name = "lbltimer_m"
-        Me.lbltimer_m.Size = New System.Drawing.Size(13, 13)
+        Me.lbltimer_m.Size = New System.Drawing.Size(14, 16)
         Me.lbltimer_m.TabIndex = 116
         Me.lbltimer_m.Text = "0"
         Me.lbltimer_m.Visible = False
@@ -727,9 +767,10 @@ Partial Class frmdfe2
         'LinkLabel4
         '
         Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.Location = New System.Drawing.Point(985, 14)
+        Me.LinkLabel4.Location = New System.Drawing.Point(1313, 17)
+        Me.LinkLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(73, 13)
+        Me.LinkLabel4.Size = New System.Drawing.Size(93, 16)
         Me.LinkLabel4.TabIndex = 112
         Me.LinkLabel4.TabStop = True
         Me.LinkLabel4.Text = "Visualizar Erro"
@@ -739,30 +780,35 @@ Partial Class frmdfe2
         Me.dgverro.AllowUserToAddRows = False
         Me.dgverro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgverro.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column3, Me.Column4})
-        Me.dgverro.Location = New System.Drawing.Point(207, 51)
+        Me.dgverro.Location = New System.Drawing.Point(276, 63)
+        Me.dgverro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgverro.Name = "dgverro"
-        Me.dgverro.Size = New System.Drawing.Size(666, 143)
+        Me.dgverro.RowHeadersWidth = 51
+        Me.dgverro.Size = New System.Drawing.Size(888, 176)
         Me.dgverro.TabIndex = 111
         Me.dgverro.Visible = False
         '
         'Column3
         '
         Me.Column3.HeaderText = "Descricao erro"
+        Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
         Me.Column3.Width = 480
         '
         'Column4
         '
         Me.Column4.HeaderText = "Momento"
+        Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
         Me.Column4.Width = 120
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(550, 14)
+        Me.LinkLabel1.Location = New System.Drawing.Point(733, 17)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(76, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(97, 16)
         Me.LinkLabel1.TabIndex = 105
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Pesquisar CTe"
@@ -770,9 +816,10 @@ Partial Class frmdfe2
         'LinkLabel3
         '
         Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(647, 16)
+        Me.LinkLabel3.Location = New System.Drawing.Point(863, 20)
+        Me.LinkLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(26, 13)
+        Me.LinkLabel3.Size = New System.Drawing.Size(32, 16)
         Me.LinkLabel3.TabIndex = 110
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "difal"
@@ -794,6 +841,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvcte.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.dgvcte.ColumnHeadersHeight = 29
         Me.dgvcte.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewLinkColumn1, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn13, Me.Column1})
         DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window
@@ -805,7 +853,8 @@ Partial Class frmdfe2
         Me.dgvcte.DefaultCellStyle = DataGridViewCellStyle16
         Me.dgvcte.EnableHeadersVisualStyles = False
         Me.dgvcte.GridColor = System.Drawing.Color.Lime
-        Me.dgvcte.Location = New System.Drawing.Point(3, 33)
+        Me.dgvcte.Location = New System.Drawing.Point(4, 41)
+        Me.dgvcte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvcte.Name = "dgvcte"
         Me.dgvcte.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -822,12 +871,13 @@ Partial Class frmdfe2
         Me.dgvcte.RowsDefaultCellStyle = DataGridViewCellStyle18
         Me.dgvcte.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvcte.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvcte.Size = New System.Drawing.Size(1067, 186)
+        Me.dgvcte.Size = New System.Drawing.Size(1423, 229)
         Me.dgvcte.TabIndex = 103
         '
         'DataGridViewLinkColumn1
         '
         Me.DataGridViewLinkColumn1.HeaderText = "Tipo Ret."
+        Me.DataGridViewLinkColumn1.MinimumWidth = 6
         Me.DataGridViewLinkColumn1.Name = "DataGridViewLinkColumn1"
         Me.DataGridViewLinkColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridViewLinkColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
@@ -836,6 +886,7 @@ Partial Class frmdfe2
         'DataGridViewTextBoxColumn1
         '
         Me.DataGridViewTextBoxColumn1.HeaderText = "Nome Emitente CTe"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         Me.DataGridViewTextBoxColumn1.ReadOnly = True
         Me.DataGridViewTextBoxColumn1.Width = 315
@@ -846,6 +897,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle12.NullValue = Nothing
         Me.DataGridViewTextBoxColumn2.DefaultCellStyle = DataGridViewCellStyle12
         Me.DataGridViewTextBoxColumn2.HeaderText = "Emissão CTe"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
         Me.DataGridViewTextBoxColumn2.Width = 75
@@ -855,6 +907,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         Me.DataGridViewTextBoxColumn3.DefaultCellStyle = DataGridViewCellStyle13
         Me.DataGridViewTextBoxColumn3.HeaderText = "Valor CTe"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
         Me.DataGridViewTextBoxColumn3.Width = 80
@@ -862,6 +915,7 @@ Partial Class frmdfe2
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.HeaderText = "Data Hora Autorizacão"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.ReadOnly = True
         Me.DataGridViewTextBoxColumn4.Width = 120
@@ -872,6 +926,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle14
         Me.DataGridViewTextBoxColumn5.HeaderText = "Situação CTe"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
         Me.DataGridViewTextBoxColumn5.Visible = False
@@ -882,35 +937,43 @@ Partial Class frmdfe2
         DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle15
         Me.DataGridViewTextBoxColumn6.HeaderText = "Tipo CTe"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
         Me.DataGridViewTextBoxColumn6.Visible = False
+        Me.DataGridViewTextBoxColumn6.Width = 125
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.HeaderText = "Chave acesso CTe"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         Me.DataGridViewTextBoxColumn7.Width = 275
         '
         'DataGridViewTextBoxColumn13
         '
         Me.DataGridViewTextBoxColumn13.HeaderText = "xml CTe"
+        Me.DataGridViewTextBoxColumn13.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         Me.DataGridViewTextBoxColumn13.Visible = False
+        Me.DataGridViewTextBoxColumn13.Width = 125
         '
         'Column1
         '
         Me.Column1.HeaderText = "Tomador"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(927, 101)
+        Me.PictureBox2.Location = New System.Drawing.Point(1236, 124)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(39, 37)
+        Me.PictureBox2.Size = New System.Drawing.Size(52, 46)
         Me.PictureBox2.TabIndex = 94
         Me.PictureBox2.TabStop = False
         '
@@ -927,15 +990,16 @@ Partial Class frmdfe2
         Me.Grouper1.CustomGroupBoxColor = System.Drawing.Color.White
         Me.Grouper1.GroupImage = Nothing
         Me.Grouper1.GroupTitle = "Certificado Digital"
-        Me.Grouper1.Location = New System.Drawing.Point(927, 13)
+        Me.Grouper1.Location = New System.Drawing.Point(1236, 16)
+        Me.Grouper1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Grouper1.Name = "Grouper1"
-        Me.Grouper1.Padding = New System.Windows.Forms.Padding(20)
+        Me.Grouper1.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper1.PaintGroupBox = False
         Me.Grouper1.RoundCorners = 10
         Me.Grouper1.ShadowColor = System.Drawing.Color.DarkGray
         Me.Grouper1.ShadowControl = True
         Me.Grouper1.ShadowThickness = 3
-        Me.Grouper1.Size = New System.Drawing.Size(149, 89)
+        Me.Grouper1.Size = New System.Drawing.Size(199, 110)
         Me.Grouper1.TabIndex = 113
         '
         'lblvenc_info
@@ -943,9 +1007,10 @@ Partial Class frmdfe2
         Me.lblvenc_info.AutoSize = True
         Me.lblvenc_info.BackColor = System.Drawing.Color.Transparent
         Me.lblvenc_info.ForeColor = System.Drawing.Color.Red
-        Me.lblvenc_info.Location = New System.Drawing.Point(18, 70)
+        Me.lblvenc_info.Location = New System.Drawing.Point(24, 86)
+        Me.lblvenc_info.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblvenc_info.Name = "lblvenc_info"
-        Me.lblvenc_info.Size = New System.Drawing.Size(116, 13)
+        Me.lblvenc_info.Size = New System.Drawing.Size(141, 16)
         Me.lblvenc_info.TabIndex = 112
         Me.lblvenc_info.Text = "Faltam 30 dias p/venc."
         '
@@ -954,19 +1019,21 @@ Partial Class frmdfe2
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.ForeColor = System.Drawing.Color.Blue
-        Me.Label10.Location = New System.Drawing.Point(28, 29)
+        Me.Label10.Location = New System.Drawing.Point(37, 36)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(89, 13)
+        Me.Label10.Size = New System.Drawing.Size(110, 16)
         Me.Label10.TabIndex = 111
         Me.Label10.Text = "Data Vencimento"
         '
         'txtvenc_info
         '
         Me.txtvenc_info.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.txtvenc_info.Location = New System.Drawing.Point(26, 45)
+        Me.txtvenc_info.Location = New System.Drawing.Point(35, 55)
+        Me.txtvenc_info.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtvenc_info.Name = "txtvenc_info"
         Me.txtvenc_info.ReadOnly = True
-        Me.txtvenc_info.Size = New System.Drawing.Size(96, 20)
+        Me.txtvenc_info.Size = New System.Drawing.Size(127, 22)
         Me.txtvenc_info.TabIndex = 111
         Me.txtvenc_info.Text = "30"
         Me.txtvenc_info.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -977,9 +1044,10 @@ Partial Class frmdfe2
         Me.lblhoradfe.BackColor = System.Drawing.Color.Transparent
         Me.lblhoradfe.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblhoradfe.ForeColor = System.Drawing.Color.Black
-        Me.lblhoradfe.Location = New System.Drawing.Point(980, 111)
+        Me.lblhoradfe.Location = New System.Drawing.Point(1307, 137)
+        Me.lblhoradfe.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblhoradfe.Name = "lblhoradfe"
-        Me.lblhoradfe.Size = New System.Drawing.Size(63, 16)
+        Me.lblhoradfe.Size = New System.Drawing.Size(81, 20)
         Me.lblhoradfe.TabIndex = 68
         Me.lblhoradfe.Text = "10:23:00"
         Me.lblhoradfe.Visible = False
@@ -989,9 +1057,10 @@ Partial Class frmdfe2
         Me.chkcusto.AutoSize = True
         Me.chkcusto.BackColor = System.Drawing.Color.Transparent
         Me.chkcusto.ForeColor = System.Drawing.Color.Blue
-        Me.chkcusto.Location = New System.Drawing.Point(48, 260)
+        Me.chkcusto.Location = New System.Drawing.Point(64, 320)
+        Me.chkcusto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkcusto.Name = "chkcusto"
-        Me.chkcusto.Size = New System.Drawing.Size(88, 17)
+        Me.chkcusto.Size = New System.Drawing.Size(109, 20)
         Me.chkcusto.TabIndex = 108
         Me.chkcusto.Text = "Validar Custo"
         Me.chkcusto.UseVisualStyleBackColor = False
@@ -1014,15 +1083,16 @@ Partial Class frmdfe2
         Me.Grouper3.CustomGroupBoxColor = System.Drawing.Color.White
         Me.Grouper3.GroupImage = Nothing
         Me.Grouper3.GroupTitle = "Painel Informações"
-        Me.Grouper3.Location = New System.Drawing.Point(6, 2)
+        Me.Grouper3.Location = New System.Drawing.Point(8, 2)
+        Me.Grouper3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Grouper3.Name = "Grouper3"
-        Me.Grouper3.Padding = New System.Windows.Forms.Padding(20)
+        Me.Grouper3.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper3.PaintGroupBox = False
         Me.Grouper3.RoundCorners = 10
         Me.Grouper3.ShadowColor = System.Drawing.Color.DarkGray
         Me.Grouper3.ShadowControl = True
         Me.Grouper3.ShadowThickness = 3
-        Me.Grouper3.Size = New System.Drawing.Size(508, 133)
+        Me.Grouper3.Size = New System.Drawing.Size(677, 164)
         Me.Grouper3.TabIndex = 115
         '
         'chkxml
@@ -1030,9 +1100,10 @@ Partial Class frmdfe2
         Me.chkxml.AutoSize = True
         Me.chkxml.BackColor = System.Drawing.Color.Transparent
         Me.chkxml.ForeColor = System.Drawing.Color.Blue
-        Me.chkxml.Location = New System.Drawing.Point(232, 12)
+        Me.chkxml.Location = New System.Drawing.Point(309, 15)
+        Me.chkxml.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkxml.Name = "chkxml"
-        Me.chkxml.Size = New System.Drawing.Size(103, 17)
+        Me.chkxml.Size = New System.Drawing.Size(128, 20)
         Me.chkxml.TabIndex = 109
         Me.chkxml.Text = "Salvar xml pasta"
         Me.chkxml.UseVisualStyleBackColor = False
@@ -1042,12 +1113,13 @@ Partial Class frmdfe2
         Me.txtinfodfe.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txtinfodfe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtinfodfe.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtinfodfe.Location = New System.Drawing.Point(7, 29)
+        Me.txtinfodfe.Location = New System.Drawing.Point(9, 36)
+        Me.txtinfodfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtinfodfe.Multiline = True
         Me.txtinfodfe.Name = "txtinfodfe"
         Me.txtinfodfe.ReadOnly = True
         Me.txtinfodfe.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtinfodfe.Size = New System.Drawing.Size(491, 77)
+        Me.txtinfodfe.Size = New System.Drawing.Size(654, 94)
         Me.txtinfodfe.TabIndex = 45
         Me.txtinfodfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1056,9 +1128,10 @@ Partial Class frmdfe2
         Me.chkmanifes.AutoSize = True
         Me.chkmanifes.BackColor = System.Drawing.Color.Transparent
         Me.chkmanifes.ForeColor = System.Drawing.Color.Blue
-        Me.chkmanifes.Location = New System.Drawing.Point(341, 12)
+        Me.chkmanifes.Location = New System.Drawing.Point(455, 15)
+        Me.chkmanifes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkmanifes.Name = "chkmanifes"
-        Me.chkmanifes.Size = New System.Drawing.Size(146, 17)
+        Me.chkmanifes.Size = New System.Drawing.Size(180, 20)
         Me.chkmanifes.TabIndex = 70
         Me.chkmanifes.Text = "Manifestacao Automatica"
         Me.chkmanifes.UseVisualStyleBackColor = False
@@ -1066,9 +1139,10 @@ Partial Class frmdfe2
         'Pic_prog
         '
         Me.Pic_prog.Image = Global.DFe_aplicativo.My.Resources.Resources.Barra_Status
-        Me.Pic_prog.Location = New System.Drawing.Point(7, 109)
+        Me.Pic_prog.Location = New System.Drawing.Point(9, 134)
+        Me.Pic_prog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Pic_prog.Name = "Pic_prog"
-        Me.Pic_prog.Size = New System.Drawing.Size(191, 16)
+        Me.Pic_prog.Size = New System.Drawing.Size(255, 20)
         Me.Pic_prog.TabIndex = 103
         Me.Pic_prog.TabStop = False
         Me.Pic_prog.Visible = False
@@ -1079,9 +1153,10 @@ Partial Class frmdfe2
         Me.bntcancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.bntcancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bntcancelar.ForeColor = System.Drawing.Color.Red
-        Me.bntcancelar.Location = New System.Drawing.Point(388, 108)
+        Me.bntcancelar.Location = New System.Drawing.Point(517, 133)
+        Me.bntcancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bntcancelar.Name = "bntcancelar"
-        Me.bntcancelar.Size = New System.Drawing.Size(110, 21)
+        Me.bntcancelar.Size = New System.Drawing.Size(147, 26)
         Me.bntcancelar.TabIndex = 104
         Me.bntcancelar.Text = "&Cancelar Execucao"
         Me.bntcancelar.UseVisualStyleBackColor = False
@@ -1091,9 +1166,10 @@ Partial Class frmdfe2
         '
         Me.txttotal_reg.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txttotal_reg.Enabled = False
-        Me.txttotal_reg.Location = New System.Drawing.Point(327, 108)
+        Me.txttotal_reg.Location = New System.Drawing.Point(436, 133)
+        Me.txttotal_reg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txttotal_reg.Name = "txttotal_reg"
-        Me.txttotal_reg.Size = New System.Drawing.Size(48, 20)
+        Me.txttotal_reg.Size = New System.Drawing.Size(63, 22)
         Me.txttotal_reg.TabIndex = 107
         Me.txttotal_reg.Text = "200"
         Me.txttotal_reg.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1102,9 +1178,10 @@ Partial Class frmdfe2
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(229, 112)
+        Me.Label7.Location = New System.Drawing.Point(305, 138)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(92, 13)
+        Me.Label7.Size = New System.Drawing.Size(115, 16)
         Me.Label7.TabIndex = 106
         Me.Label7.Text = "Máximo Reg. grid."
         '
@@ -1135,15 +1212,16 @@ Partial Class frmdfe2
         Me.Grouper2.CustomGroupBoxColor = System.Drawing.Color.White
         Me.Grouper2.GroupImage = Nothing
         Me.Grouper2.GroupTitle = "CNPJ empresa:   ________________                            "
-        Me.Grouper2.Location = New System.Drawing.Point(520, 3)
+        Me.Grouper2.Location = New System.Drawing.Point(693, 4)
+        Me.Grouper2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Grouper2.Name = "Grouper2"
-        Me.Grouper2.Padding = New System.Windows.Forms.Padding(20)
+        Me.Grouper2.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper2.PaintGroupBox = False
         Me.Grouper2.RoundCorners = 10
         Me.Grouper2.ShadowColor = System.Drawing.Color.DarkGray
         Me.Grouper2.ShadowControl = True
         Me.Grouper2.ShadowThickness = 3
-        Me.Grouper2.Size = New System.Drawing.Size(400, 133)
+        Me.Grouper2.Size = New System.Drawing.Size(533, 164)
         Me.Grouper2.TabIndex = 114
         '
         'chkBucketS3
@@ -1151,9 +1229,10 @@ Partial Class frmdfe2
         Me.chkBucketS3.AutoSize = True
         Me.chkBucketS3.Checked = True
         Me.chkBucketS3.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkBucketS3.Location = New System.Drawing.Point(250, 12)
+        Me.chkBucketS3.Location = New System.Drawing.Point(333, 15)
+        Me.chkBucketS3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkBucketS3.Name = "chkBucketS3"
-        Me.chkBucketS3.Size = New System.Drawing.Size(99, 17)
+        Me.chkBucketS3.Size = New System.Drawing.Size(120, 20)
         Me.chkBucketS3.TabIndex = 122
         Me.chkBucketS3.Text = "ReadBucketS3"
         Me.chkBucketS3.UseVisualStyleBackColor = True
@@ -1164,9 +1243,10 @@ Partial Class frmdfe2
         Me.lblultimaexec.BackColor = System.Drawing.Color.Transparent
         Me.lblultimaexec.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblultimaexec.ForeColor = System.Drawing.Color.White
-        Me.lblultimaexec.Location = New System.Drawing.Point(236, 111)
+        Me.lblultimaexec.Location = New System.Drawing.Point(315, 137)
+        Me.lblultimaexec.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblultimaexec.Name = "lblultimaexec"
-        Me.lblultimaexec.Size = New System.Drawing.Size(141, 16)
+        Me.lblultimaexec.Size = New System.Drawing.Size(179, 20)
         Me.lblultimaexec.TabIndex = 121
         Me.lblultimaexec.Text = "01/01/0101 00:00:00"
         '
@@ -1176,9 +1256,10 @@ Partial Class frmdfe2
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(9, 111)
+        Me.Label9.Location = New System.Drawing.Point(12, 137)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(220, 16)
+        Me.Label9.Size = New System.Drawing.Size(268, 20)
         Me.Label9.TabIndex = 120
         Me.Label9.Text = "Ùltima execução realizada em:"
         '
@@ -1186,9 +1267,10 @@ Partial Class frmdfe2
         '
         Me.lblinfo_m.AutoSize = True
         Me.lblinfo_m.ForeColor = System.Drawing.Color.White
-        Me.lblinfo_m.Location = New System.Drawing.Point(343, 12)
+        Me.lblinfo_m.Location = New System.Drawing.Point(457, 15)
+        Me.lblinfo_m.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblinfo_m.Name = "lblinfo_m"
-        Me.lblinfo_m.Size = New System.Drawing.Size(13, 13)
+        Me.lblinfo_m.Size = New System.Drawing.Size(14, 16)
         Me.lblinfo_m.TabIndex = 117
         Me.lblinfo_m.Text = "0"
         Me.lblinfo_m.Visible = False
@@ -1199,9 +1281,10 @@ Partial Class frmdfe2
         Me.cbocnpjdfe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbocnpjdfe.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cbocnpjdfe.FormattingEnabled = True
-        Me.cbocnpjdfe.Location = New System.Drawing.Point(113, 2)
+        Me.cbocnpjdfe.Location = New System.Drawing.Point(151, 2)
+        Me.cbocnpjdfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbocnpjdfe.Name = "cbocnpjdfe"
-        Me.cbocnpjdfe.Size = New System.Drawing.Size(110, 21)
+        Me.cbocnpjdfe.Size = New System.Drawing.Size(145, 24)
         Me.cbocnpjdfe.TabIndex = 102
         '
         'Label143
@@ -1210,9 +1293,10 @@ Partial Class frmdfe2
         Me.Label143.BackColor = System.Drawing.Color.Transparent
         Me.Label143.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label143.Location = New System.Drawing.Point(9, 28)
+        Me.Label143.Location = New System.Drawing.Point(12, 34)
+        Me.Label143.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label143.Name = "Label143"
-        Me.Label143.Size = New System.Drawing.Size(112, 15)
+        Me.Label143.Size = New System.Drawing.Size(133, 18)
         Me.Label143.TabIndex = 14
         Me.Label143.Text = "Ùltimo NSU NFe"
         '
@@ -1222,9 +1306,10 @@ Partial Class frmdfe2
         Me.Label144.BackColor = System.Drawing.Color.Transparent
         Me.Label144.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label144.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label144.Location = New System.Drawing.Point(244, 28)
+        Me.Label144.Location = New System.Drawing.Point(325, 34)
+        Me.Label144.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label144.Name = "Label144"
-        Me.Label144.Size = New System.Drawing.Size(108, 16)
+        Me.Label144.Size = New System.Drawing.Size(129, 20)
         Me.Label144.TabIndex = 8
         Me.Label144.Text = "Tipo Ambiente"
         '
@@ -1232,10 +1317,11 @@ Partial Class frmdfe2
         '
         Me.txtmaxNSU.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtmaxNSU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtmaxNSU.Location = New System.Drawing.Point(12, 88)
+        Me.txtmaxNSU.Location = New System.Drawing.Point(16, 108)
+        Me.txtmaxNSU.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtmaxNSU.Name = "txtmaxNSU"
         Me.txtmaxNSU.ReadOnly = True
-        Me.txtmaxNSU.Size = New System.Drawing.Size(109, 20)
+        Me.txtmaxNSU.Size = New System.Drawing.Size(145, 22)
         Me.txtmaxNSU.TabIndex = 5
         Me.txtmaxNSU.Text = "000000000000000"
         Me.txtmaxNSU.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1246,9 +1332,10 @@ Partial Class frmdfe2
         Me.Label32.BackColor = System.Drawing.Color.Transparent
         Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label32.ForeColor = System.Drawing.Color.Black
-        Me.Label32.Location = New System.Drawing.Point(9, 69)
+        Me.Label32.Location = New System.Drawing.Point(12, 85)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(108, 16)
+        Me.Label32.Size = New System.Drawing.Size(132, 20)
         Me.Label32.TabIndex = 15
         Me.Label32.Text = "Max. NSU NFe"
         '
@@ -1257,23 +1344,25 @@ Partial Class frmdfe2
         Me.txtultnsudfe.BackColor = System.Drawing.Color.Yellow
         Me.txtultnsudfe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtultnsudfe.ContextMenuStrip = Me.ContextMenuStrip3
-        Me.txtultnsudfe.Location = New System.Drawing.Point(12, 46)
+        Me.txtultnsudfe.Location = New System.Drawing.Point(16, 57)
+        Me.txtultnsudfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtultnsudfe.Name = "txtultnsudfe"
-        Me.txtultnsudfe.Size = New System.Drawing.Size(109, 20)
+        Me.txtultnsudfe.Size = New System.Drawing.Size(145, 22)
         Me.txtultnsudfe.TabIndex = 16
         Me.txtultnsudfe.Text = "000000000000000"
         Me.txtultnsudfe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'ContextMenuStrip3
         '
+        Me.ContextMenuStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConsultaNSUToolStripMenuItem})
         Me.ContextMenuStrip3.Name = "ContextMenuStrip3"
-        Me.ContextMenuStrip3.Size = New System.Drawing.Size(148, 26)
+        Me.ContextMenuStrip3.Size = New System.Drawing.Size(169, 28)
         '
         'ConsultaNSUToolStripMenuItem
         '
         Me.ConsultaNSUToolStripMenuItem.Name = "ConsultaNSUToolStripMenuItem"
-        Me.ConsultaNSUToolStripMenuItem.Size = New System.Drawing.Size(147, 22)
+        Me.ConsultaNSUToolStripMenuItem.Size = New System.Drawing.Size(168, 24)
         Me.ConsultaNSUToolStripMenuItem.Text = "Consulta NSU"
         '
         'cboambdfe
@@ -1282,16 +1371,18 @@ Partial Class frmdfe2
         Me.cboambdfe.Enabled = False
         Me.cboambdfe.FormattingEnabled = True
         Me.cboambdfe.Items.AddRange(New Object() {"1-Produção", "2-Homologação"})
-        Me.cboambdfe.Location = New System.Drawing.Point(247, 47)
+        Me.cboambdfe.Location = New System.Drawing.Point(329, 58)
+        Me.cboambdfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cboambdfe.Name = "cboambdfe"
-        Me.cboambdfe.Size = New System.Drawing.Size(131, 21)
+        Me.cboambdfe.Size = New System.Drawing.Size(173, 24)
         Me.cboambdfe.TabIndex = 18
         '
         'bar_status
         '
-        Me.bar_status.Location = New System.Drawing.Point(250, -1)
+        Me.bar_status.Location = New System.Drawing.Point(333, -1)
+        Me.bar_status.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bar_status.Name = "bar_status"
-        Me.bar_status.Size = New System.Drawing.Size(149, 10)
+        Me.bar_status.Size = New System.Drawing.Size(199, 12)
         Me.bar_status.TabIndex = 107
         Me.bar_status.Visible = False
         '
@@ -1303,9 +1394,10 @@ Partial Class frmdfe2
         Me.bntpesqDFe.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bntpesqDFe.Image = CType(resources.GetObject("bntpesqDFe.Image"), System.Drawing.Image)
         Me.bntpesqDFe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bntpesqDFe.Location = New System.Drawing.Point(247, 80)
+        Me.bntpesqDFe.Location = New System.Drawing.Point(329, 98)
+        Me.bntpesqDFe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bntpesqDFe.Name = "bntpesqDFe"
-        Me.bntpesqDFe.Size = New System.Drawing.Size(131, 28)
+        Me.bntpesqDFe.Size = New System.Drawing.Size(175, 34)
         Me.bntpesqDFe.TabIndex = 49
         Me.bntpesqDFe.Text = "Pesquisar   "
         Me.bntpesqDFe.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -1317,9 +1409,10 @@ Partial Class frmdfe2
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(127, 28)
+        Me.Label2.Location = New System.Drawing.Point(169, 34)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 15)
+        Me.Label2.Size = New System.Drawing.Size(133, 18)
         Me.Label2.TabIndex = 99
         Me.Label2.Text = "Ùltimo NSU CTe"
         '
@@ -1327,10 +1420,11 @@ Partial Class frmdfe2
         '
         Me.txtultnsucte.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txtultnsucte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtultnsucte.Location = New System.Drawing.Point(130, 47)
+        Me.txtultnsucte.Location = New System.Drawing.Point(173, 58)
+        Me.txtultnsucte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtultnsucte.Name = "txtultnsucte"
         Me.txtultnsucte.ReadOnly = True
-        Me.txtultnsucte.Size = New System.Drawing.Size(109, 20)
+        Me.txtultnsucte.Size = New System.Drawing.Size(145, 22)
         Me.txtultnsucte.TabIndex = 101
         Me.txtultnsucte.Text = "000000000000000"
         Me.txtultnsucte.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1339,10 +1433,11 @@ Partial Class frmdfe2
         '
         Me.txtmaxnsucte.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtmaxnsucte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtmaxnsucte.Location = New System.Drawing.Point(129, 88)
+        Me.txtmaxnsucte.Location = New System.Drawing.Point(172, 108)
+        Me.txtmaxnsucte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtmaxnsucte.Name = "txtmaxnsucte"
         Me.txtmaxnsucte.ReadOnly = True
-        Me.txtmaxnsucte.Size = New System.Drawing.Size(109, 20)
+        Me.txtmaxnsucte.Size = New System.Drawing.Size(145, 22)
         Me.txtmaxnsucte.TabIndex = 98
         Me.txtmaxnsucte.Text = "000000000000000"
         Me.txtmaxnsucte.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -1353,17 +1448,19 @@ Partial Class frmdfe2
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(127, 70)
+        Me.Label1.Location = New System.Drawing.Point(169, 86)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(108, 16)
+        Me.Label1.Size = New System.Drawing.Size(132, 20)
         Me.Label1.TabIndex = 100
         Me.Label1.Text = "Max. NSU CTe"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(905, 228)
+        Me.Button1.Location = New System.Drawing.Point(1207, 281)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 106
         Me.Button1.Text = "IMPORTAR"
         Me.Button1.UseVisualStyleBackColor = True
@@ -1393,10 +1490,11 @@ Partial Class frmdfe2
         Me.TabPage2.Controls.Add(Me.dgvhost)
         Me.TabPage2.Controls.Add(Me.picoff)
         Me.TabPage2.Controls.Add(Me.picon)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1082, 641)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Size = New System.Drawing.Size(1445, 792)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Servidor Web"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -1407,9 +1505,10 @@ Partial Class frmdfe2
         Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button15.Location = New System.Drawing.Point(6, 442)
+        Me.Button15.Location = New System.Drawing.Point(8, 544)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(113, 30)
+        Me.Button15.Size = New System.Drawing.Size(151, 37)
         Me.Button15.TabIndex = 48
         Me.Button15.Text = "Par.Carga"
         Me.Button15.UseVisualStyleBackColor = True
@@ -1417,9 +1516,10 @@ Partial Class frmdfe2
         'lblurlhost
         '
         Me.lblurlhost.AutoSize = True
-        Me.lblurlhost.Location = New System.Drawing.Point(886, 72)
+        Me.lblurlhost.Location = New System.Drawing.Point(1181, 89)
+        Me.lblurlhost.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblurlhost.Name = "lblurlhost"
-        Me.lblurlhost.Size = New System.Drawing.Size(51, 13)
+        Me.lblurlhost.Size = New System.Drawing.Size(61, 16)
         Me.lblurlhost.TabIndex = 47
         Me.lblurlhost.Text = "Url Host: "
         '
@@ -1429,9 +1529,10 @@ Partial Class frmdfe2
         Me.bntsintegra.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bntsintegra.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bntsintegra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.bntsintegra.Location = New System.Drawing.Point(6, 406)
+        Me.bntsintegra.Location = New System.Drawing.Point(8, 500)
+        Me.bntsintegra.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bntsintegra.Name = "bntsintegra"
-        Me.bntsintegra.Size = New System.Drawing.Size(113, 30)
+        Me.bntsintegra.Size = New System.Drawing.Size(151, 37)
         Me.bntsintegra.TabIndex = 46
         Me.bntsintegra.Text = "Sintegra"
         Me.bntsintegra.UseVisualStyleBackColor = True
@@ -1442,9 +1543,10 @@ Partial Class frmdfe2
         Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button13.Location = New System.Drawing.Point(6, 370)
+        Me.Button13.Location = New System.Drawing.Point(8, 455)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(113, 30)
+        Me.Button13.Size = New System.Drawing.Size(151, 37)
         Me.Button13.TabIndex = 45
         Me.Button13.Text = "NF entrada"
         Me.Button13.UseVisualStyleBackColor = True
@@ -1455,9 +1557,10 @@ Partial Class frmdfe2
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button12.Location = New System.Drawing.Point(6, 262)
+        Me.Button12.Location = New System.Drawing.Point(8, 322)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(113, 30)
+        Me.Button12.Size = New System.Drawing.Size(151, 37)
         Me.Button12.TabIndex = 44
         Me.Button12.Text = "Operador"
         Me.Button12.UseVisualStyleBackColor = True
@@ -1468,9 +1571,10 @@ Partial Class frmdfe2
         Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button11.Location = New System.Drawing.Point(6, 334)
+        Me.Button11.Location = New System.Drawing.Point(8, 411)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(113, 30)
+        Me.Button11.Size = New System.Drawing.Size(151, 37)
         Me.Button11.TabIndex = 43
         Me.Button11.Text = "carga"
         Me.Button11.UseVisualStyleBackColor = True
@@ -1481,9 +1585,10 @@ Partial Class frmdfe2
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button10.Location = New System.Drawing.Point(6, 298)
+        Me.Button10.Location = New System.Drawing.Point(8, 367)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(113, 30)
+        Me.Button10.Size = New System.Drawing.Size(151, 37)
         Me.Button10.TabIndex = 42
         Me.Button10.Text = "NF-e"
         Me.Button10.UseVisualStyleBackColor = True
@@ -1494,9 +1599,10 @@ Partial Class frmdfe2
         Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(6, 118)
+        Me.Button8.Location = New System.Drawing.Point(8, 145)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(113, 30)
+        Me.Button8.Size = New System.Drawing.Size(151, 37)
         Me.Button8.TabIndex = 41
         Me.Button8.Text = "Empresas"
         Me.Button8.UseVisualStyleBackColor = True
@@ -1507,9 +1613,10 @@ Partial Class frmdfe2
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button7.Location = New System.Drawing.Point(6, 190)
+        Me.Button7.Location = New System.Drawing.Point(8, 234)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(113, 30)
+        Me.Button7.Size = New System.Drawing.Size(151, 37)
         Me.Button7.TabIndex = 40
         Me.Button7.Text = "Clientes"
         Me.Button7.UseVisualStyleBackColor = True
@@ -1520,9 +1627,10 @@ Partial Class frmdfe2
         Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(6, 154)
+        Me.Button6.Location = New System.Drawing.Point(8, 190)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(113, 30)
+        Me.Button6.Size = New System.Drawing.Size(151, 37)
         Me.Button6.TabIndex = 39
         Me.Button6.Text = "Fornecedor"
         Me.Button6.UseVisualStyleBackColor = True
@@ -1533,9 +1641,10 @@ Partial Class frmdfe2
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(6, 226)
+        Me.Button5.Location = New System.Drawing.Point(8, 278)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(113, 30)
+        Me.Button5.Size = New System.Drawing.Size(151, 37)
         Me.Button5.TabIndex = 38
         Me.Button5.Text = "Produtos"
         Me.Button5.UseVisualStyleBackColor = True
@@ -1547,9 +1656,11 @@ Partial Class frmdfe2
         Me.GroupBox1.Controls.Add(Me.Pic_on_inter)
         Me.GroupBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.GroupBox1.Location = New System.Drawing.Point(151, 8)
+        Me.GroupBox1.Location = New System.Drawing.Point(201, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(152, 68)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(203, 84)
         Me.GroupBox1.TabIndex = 36
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Status Conexão Internet"
@@ -1559,9 +1670,10 @@ Partial Class frmdfe2
         '
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.Location = New System.Drawing.Point(43, 32)
+        Me.LinkLabel2.Location = New System.Drawing.Point(57, 39)
+        Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(85, 16)
+        Me.LinkLabel2.Size = New System.Drawing.Size(103, 20)
         Me.LinkLabel2.TabIndex = 47
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Clique aqui"
@@ -1569,9 +1681,10 @@ Partial Class frmdfe2
         'Pic_off_inter
         '
         Me.Pic_off_inter.Image = Global.DFe_aplicativo.My.Resources.Resources.off
-        Me.Pic_off_inter.Location = New System.Drawing.Point(46, 13)
+        Me.Pic_off_inter.Location = New System.Drawing.Point(61, 16)
+        Me.Pic_off_inter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Pic_off_inter.Name = "Pic_off_inter"
-        Me.Pic_off_inter.Size = New System.Drawing.Size(32, 35)
+        Me.Pic_off_inter.Size = New System.Drawing.Size(43, 43)
         Me.Pic_off_inter.TabIndex = 1
         Me.Pic_off_inter.TabStop = False
         Me.Pic_off_inter.Visible = False
@@ -1579,9 +1692,10 @@ Partial Class frmdfe2
         'Pic_on_inter
         '
         Me.Pic_on_inter.Image = Global.DFe_aplicativo.My.Resources.Resources.ONLINE1
-        Me.Pic_on_inter.Location = New System.Drawing.Point(46, 13)
+        Me.Pic_on_inter.Location = New System.Drawing.Point(61, 16)
+        Me.Pic_on_inter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Pic_on_inter.Name = "Pic_on_inter"
-        Me.Pic_on_inter.Size = New System.Drawing.Size(52, 52)
+        Me.Pic_on_inter.Size = New System.Drawing.Size(69, 64)
         Me.Pic_on_inter.TabIndex = 0
         Me.Pic_on_inter.TabStop = False
         Me.Pic_on_inter.Visible = False
@@ -1589,9 +1703,10 @@ Partial Class frmdfe2
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(886, 8)
+        Me.Label5.Location = New System.Drawing.Point(1181, 10)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(102, 13)
+        Me.Label5.Size = New System.Drawing.Size(128, 16)
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Certificado Conexão"
         '
@@ -1599,9 +1714,10 @@ Partial Class frmdfe2
         '
         Me.cbocert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbocert.FormattingEnabled = True
-        Me.cbocert.Location = New System.Drawing.Point(889, 24)
+        Me.cbocert.Location = New System.Drawing.Point(1185, 30)
+        Me.cbocert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbocert.Name = "cbocert"
-        Me.cbocert.Size = New System.Drawing.Size(121, 21)
+        Me.cbocert.Size = New System.Drawing.Size(160, 24)
         Me.cbocert.TabIndex = 34
         '
         'Button9
@@ -1610,9 +1726,10 @@ Partial Class frmdfe2
         Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.Red
-        Me.Button9.Location = New System.Drawing.Point(6, 53)
+        Me.Button9.Location = New System.Drawing.Point(8, 65)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(113, 30)
+        Me.Button9.Size = New System.Drawing.Size(151, 37)
         Me.Button9.TabIndex = 32
         Me.Button9.Text = "Parar Host"
         Me.Button9.UseVisualStyleBackColor = True
@@ -1624,9 +1741,10 @@ Partial Class frmdfe2
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(6, 17)
+        Me.Button3.Location = New System.Drawing.Point(8, 21)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 30)
+        Me.Button3.Size = New System.Drawing.Size(151, 37)
         Me.Button3.TabIndex = 31
         Me.Button3.Text = "Ativar Host"
         Me.Button3.UseVisualStyleBackColor = True
@@ -1637,9 +1755,10 @@ Partial Class frmdfe2
         Me.lblof.AutoSize = True
         Me.lblof.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblof.ForeColor = System.Drawing.Color.Red
-        Me.lblof.Location = New System.Drawing.Point(479, 21)
+        Me.lblof.Location = New System.Drawing.Point(639, 26)
+        Me.lblof.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblof.Name = "lblof"
-        Me.lblof.Size = New System.Drawing.Size(133, 20)
+        Me.lblof.Size = New System.Drawing.Size(162, 25)
         Me.lblof.TabIndex = 30
         Me.lblof.Text = "Servidor Offline"
         '
@@ -1648,9 +1767,10 @@ Partial Class frmdfe2
         Me.lblon.AutoSize = True
         Me.lblon.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblon.ForeColor = System.Drawing.Color.Green
-        Me.lblon.Location = New System.Drawing.Point(479, 21)
+        Me.lblon.Location = New System.Drawing.Point(639, 26)
+        Me.lblon.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblon.Name = "lblon"
-        Me.lblon.Size = New System.Drawing.Size(131, 20)
+        Me.lblon.Size = New System.Drawing.Size(162, 25)
         Me.lblon.TabIndex = 28
         Me.lblon.Text = "Servidor Online"
         Me.lblon.Visible = False
@@ -1660,9 +1780,10 @@ Partial Class frmdfe2
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Blue
-        Me.Label6.Location = New System.Drawing.Point(451, 72)
+        Me.Label6.Location = New System.Drawing.Point(601, 89)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(247, 20)
+        Me.Label6.Size = New System.Drawing.Size(301, 25)
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "Painel de eventos do Servidor"
         '
@@ -1679,6 +1800,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvhost.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
+        Me.dgvhost.ColumnHeadersHeight = 29
         Me.dgvhost.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvhost.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.evento, Me.data_hora})
         DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -1690,7 +1812,8 @@ Partial Class frmdfe2
         DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvhost.DefaultCellStyle = DataGridViewCellStyle20
         Me.dgvhost.EnableHeadersVisualStyles = False
-        Me.dgvhost.Location = New System.Drawing.Point(151, 95)
+        Me.dgvhost.Location = New System.Drawing.Point(201, 117)
+        Me.dgvhost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvhost.Name = "dgvhost"
         DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
@@ -1701,18 +1824,21 @@ Partial Class frmdfe2
         DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvhost.RowHeadersDefaultCellStyle = DataGridViewCellStyle21
         Me.dgvhost.RowHeadersVisible = False
-        Me.dgvhost.Size = New System.Drawing.Size(859, 520)
+        Me.dgvhost.RowHeadersWidth = 51
+        Me.dgvhost.Size = New System.Drawing.Size(1145, 640)
         Me.dgvhost.TabIndex = 25
         '
         'evento
         '
         Me.evento.HeaderText = "Evento executados no Host"
+        Me.evento.MinimumWidth = 6
         Me.evento.Name = "evento"
         Me.evento.Width = 700
         '
         'data_hora
         '
         Me.data_hora.HeaderText = "Data Hora"
+        Me.data_hora.MinimumWidth = 6
         Me.data_hora.Name = "data_hora"
         Me.data_hora.Width = 140
         '
@@ -1720,9 +1846,10 @@ Partial Class frmdfe2
         '
         Me.picoff.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picoff.Image = Global.DFe_aplicativo.My.Resources.Resources.power
-        Me.picoff.Location = New System.Drawing.Point(616, 10)
+        Me.picoff.Location = New System.Drawing.Point(821, 12)
+        Me.picoff.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picoff.Name = "picoff"
-        Me.picoff.Size = New System.Drawing.Size(51, 48)
+        Me.picoff.Size = New System.Drawing.Size(68, 59)
         Me.picoff.TabIndex = 29
         Me.picoff.TabStop = False
         '
@@ -1730,9 +1857,10 @@ Partial Class frmdfe2
         '
         Me.picon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picon.Image = Global.DFe_aplicativo.My.Resources.Resources.ligado
-        Me.picon.Location = New System.Drawing.Point(527, 8)
+        Me.picon.Location = New System.Drawing.Point(703, 10)
+        Me.picon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.picon.Name = "picon"
-        Me.picon.Size = New System.Drawing.Size(140, 48)
+        Me.picon.Size = New System.Drawing.Size(187, 59)
         Me.picon.TabIndex = 27
         Me.picon.TabStop = False
         Me.picon.Visible = False
@@ -1759,10 +1887,11 @@ Partial Class frmdfe2
         Me.TabPage1.Controls.Add(Me.Button2)
         Me.TabPage1.Controls.Add(Me.Button4)
         Me.TabPage1.Controls.Add(Me.btnpesquisar)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1082, 641)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(1445, 792)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "Painel NFC-e"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -1771,9 +1900,10 @@ Partial Class frmdfe2
         '
         Me.chkc.AutoSize = True
         Me.chkc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkc.Location = New System.Drawing.Point(171, 30)
+        Me.chkc.Location = New System.Drawing.Point(228, 37)
+        Me.chkc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkc.Name = "chkc"
-        Me.chkc.Size = New System.Drawing.Size(59, 19)
+        Me.chkc.Size = New System.Drawing.Size(71, 22)
         Me.chkc.TabIndex = 66
         Me.chkc.Text = "Cont."
         Me.chkc.UseVisualStyleBackColor = True
@@ -1782,9 +1912,10 @@ Partial Class frmdfe2
         '
         Me.chkcaixa.AutoSize = True
         Me.chkcaixa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkcaixa.Location = New System.Drawing.Point(378, 12)
+        Me.chkcaixa.Location = New System.Drawing.Point(504, 15)
+        Me.chkcaixa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkcaixa.Name = "chkcaixa"
-        Me.chkcaixa.Size = New System.Drawing.Size(62, 19)
+        Me.chkcaixa.Size = New System.Drawing.Size(72, 22)
         Me.chkcaixa.TabIndex = 65
         Me.chkcaixa.Text = "Caixa"
         Me.chkcaixa.UseVisualStyleBackColor = True
@@ -1793,9 +1924,10 @@ Partial Class frmdfe2
         '
         Me.chkstatus.AutoSize = True
         Me.chkstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkstatus.Location = New System.Drawing.Point(236, 12)
+        Me.chkstatus.Location = New System.Drawing.Point(315, 15)
+        Me.chkstatus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkstatus.Name = "chkstatus"
-        Me.chkstatus.Size = New System.Drawing.Size(105, 19)
+        Me.chkstatus.Size = New System.Drawing.Size(126, 22)
         Me.chkstatus.TabIndex = 64
         Me.chkstatus.Text = "Status NFCe"
         Me.chkstatus.UseVisualStyleBackColor = True
@@ -1806,18 +1938,20 @@ Partial Class frmdfe2
         Me.cbostatus.Enabled = False
         Me.cbostatus.FormattingEnabled = True
         Me.cbostatus.Items.AddRange(New Object() {"NFC-e Autorizada", "NFC-e Cancelada", "NFC-e Inutilizada"})
-        Me.cbostatus.Location = New System.Drawing.Point(236, 30)
+        Me.cbostatus.Location = New System.Drawing.Point(315, 37)
+        Me.cbostatus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbostatus.Name = "cbostatus"
-        Me.cbostatus.Size = New System.Drawing.Size(135, 21)
+        Me.cbostatus.Size = New System.Drawing.Size(179, 24)
         Me.cbostatus.TabIndex = 63
         '
         'chkdest
         '
         Me.chkdest.AutoSize = True
         Me.chkdest.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkdest.Location = New System.Drawing.Point(596, 12)
+        Me.chkdest.Location = New System.Drawing.Point(795, 15)
+        Me.chkdest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkdest.Name = "chkdest"
-        Me.chkdest.Size = New System.Drawing.Size(98, 19)
+        Me.chkdest.Size = New System.Drawing.Size(119, 22)
         Me.chkdest.TabIndex = 62
         Me.chkdest.Text = "CNPJ Dest."
         Me.chkdest.UseVisualStyleBackColor = True
@@ -1825,10 +1959,11 @@ Partial Class frmdfe2
         'mskdest
         '
         Me.mskdest.Enabled = False
-        Me.mskdest.Location = New System.Drawing.Point(596, 31)
+        Me.mskdest.Location = New System.Drawing.Point(795, 38)
+        Me.mskdest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.mskdest.Mask = "00,000,000/0000-00"
         Me.mskdest.Name = "mskdest"
-        Me.mskdest.Size = New System.Drawing.Size(119, 20)
+        Me.mskdest.Size = New System.Drawing.Size(157, 22)
         Me.mskdest.TabIndex = 61
         Me.mskdest.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         '
@@ -1837,18 +1972,20 @@ Partial Class frmdfe2
         Me.cbocaixa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbocaixa.Enabled = False
         Me.cbocaixa.FormattingEnabled = True
-        Me.cbocaixa.Location = New System.Drawing.Point(378, 30)
+        Me.cbocaixa.Location = New System.Drawing.Point(504, 37)
+        Me.cbocaixa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cbocaixa.Name = "cbocaixa"
-        Me.cbocaixa.Size = New System.Drawing.Size(62, 21)
+        Me.cbocaixa.Size = New System.Drawing.Size(81, 24)
         Me.cbocaixa.TabIndex = 59
         '
         'chknumero
         '
         Me.chknumero.AutoSize = True
         Me.chknumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chknumero.Location = New System.Drawing.Point(446, 12)
+        Me.chknumero.Location = New System.Drawing.Point(595, 15)
+        Me.chknumero.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chknumero.Name = "chknumero"
-        Me.chknumero.Size = New System.Drawing.Size(81, 19)
+        Me.chknumero.Size = New System.Drawing.Size(97, 22)
         Me.chknumero.TabIndex = 58
         Me.chknumero.Text = "N° NFCe"
         Me.chknumero.UseVisualStyleBackColor = True
@@ -1856,18 +1993,20 @@ Partial Class frmdfe2
         'txtnumero
         '
         Me.txtnumero.Enabled = False
-        Me.txtnumero.Location = New System.Drawing.Point(446, 31)
+        Me.txtnumero.Location = New System.Drawing.Point(595, 38)
+        Me.txtnumero.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtnumero.Name = "txtnumero"
-        Me.txtnumero.Size = New System.Drawing.Size(76, 20)
+        Me.txtnumero.Size = New System.Drawing.Size(100, 22)
         Me.txtnumero.TabIndex = 57
         '
         'chkrv
         '
         Me.chkrv.AutoSize = True
         Me.chkrv.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkrv.Location = New System.Drawing.Point(528, 12)
+        Me.chkrv.Location = New System.Drawing.Point(704, 15)
+        Me.chkrv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkrv.Name = "chkrv"
-        Me.chkrv.Size = New System.Drawing.Size(44, 19)
+        Me.chkrv.Size = New System.Drawing.Size(52, 22)
         Me.chkrv.TabIndex = 56
         Me.chkrv.Text = "RV"
         Me.chkrv.UseVisualStyleBackColor = True
@@ -1875,9 +2014,10 @@ Partial Class frmdfe2
         'txtrv
         '
         Me.txtrv.Enabled = False
-        Me.txtrv.Location = New System.Drawing.Point(528, 31)
+        Me.txtrv.Location = New System.Drawing.Point(704, 38)
+        Me.txtrv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtrv.Name = "txtrv"
-        Me.txtrv.Size = New System.Drawing.Size(62, 20)
+        Me.txtrv.Size = New System.Drawing.Size(81, 22)
         Me.txtrv.TabIndex = 55
         '
         'chkauto
@@ -1885,9 +2025,10 @@ Partial Class frmdfe2
         Me.chkauto.AutoSize = True
         Me.chkauto.Checked = True
         Me.chkauto.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkauto.Location = New System.Drawing.Point(953, 8)
+        Me.chkauto.Location = New System.Drawing.Point(1271, 10)
+        Me.chkauto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkauto.Name = "chkauto"
-        Me.chkauto.Size = New System.Drawing.Size(98, 17)
+        Me.chkauto.Size = New System.Drawing.Size(118, 20)
         Me.chkauto.TabIndex = 54
         Me.chkauto.Text = "Auto execucao"
         Me.chkauto.UseVisualStyleBackColor = True
@@ -1898,17 +2039,19 @@ Partial Class frmdfe2
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.lbltimer)
         Me.Panel1.Controls.Add(Me.lblinfo_auto)
-        Me.Panel1.Location = New System.Drawing.Point(3, 607)
+        Me.Panel1.Location = New System.Drawing.Point(4, 747)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1044, 34)
+        Me.Panel1.Size = New System.Drawing.Size(1391, 41)
         Me.Panel1.TabIndex = 52
         '
         'lbltimer
         '
         Me.lbltimer.AutoSize = True
-        Me.lbltimer.Location = New System.Drawing.Point(1010, 9)
+        Me.lbltimer.Location = New System.Drawing.Point(1347, 11)
+        Me.lbltimer.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbltimer.Name = "lbltimer"
-        Me.lbltimer.Size = New System.Drawing.Size(13, 13)
+        Me.lbltimer.Size = New System.Drawing.Size(14, 16)
         Me.lbltimer.TabIndex = 54
         Me.lbltimer.Text = "0"
         '
@@ -1917,9 +2060,10 @@ Partial Class frmdfe2
         Me.lblinfo_auto.AutoSize = True
         Me.lblinfo_auto.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblinfo_auto.ForeColor = System.Drawing.Color.Blue
-        Me.lblinfo_auto.Location = New System.Drawing.Point(3, 6)
+        Me.lblinfo_auto.Location = New System.Drawing.Point(4, 7)
+        Me.lblinfo_auto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblinfo_auto.Name = "lblinfo_auto"
-        Me.lblinfo_auto.Size = New System.Drawing.Size(114, 16)
+        Me.lblinfo_auto.Size = New System.Drawing.Size(141, 20)
         Me.lblinfo_auto.TabIndex = 31
         Me.lblinfo_auto.Text = "Servidor Offline"
         Me.lblinfo_auto.Visible = False
@@ -1927,9 +2071,10 @@ Partial Class frmdfe2
         'chkclique
         '
         Me.chkclique.AutoSize = True
-        Me.chkclique.Location = New System.Drawing.Point(9, 70)
+        Me.chkclique.Location = New System.Drawing.Point(12, 86)
+        Me.chkclique.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkclique.Name = "chkclique"
-        Me.chkclique.Size = New System.Drawing.Size(15, 14)
+        Me.chkclique.Size = New System.Drawing.Size(18, 17)
         Me.chkclique.TabIndex = 50
         Me.chkclique.UseVisualStyleBackColor = True
         '
@@ -1939,18 +2084,20 @@ Partial Class frmdfe2
         Me.Panel_nfce.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel_nfce.Controls.Add(Me.PictureBox1)
         Me.Panel_nfce.Controls.Add(Me.txtinfo_nfce)
-        Me.Panel_nfce.Location = New System.Drawing.Point(310, 95)
+        Me.Panel_nfce.Location = New System.Drawing.Point(413, 117)
+        Me.Panel_nfce.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel_nfce.Name = "Panel_nfce"
-        Me.Panel_nfce.Size = New System.Drawing.Size(448, 100)
+        Me.Panel_nfce.Size = New System.Drawing.Size(597, 123)
         Me.Panel_nfce.TabIndex = 49
         Me.Panel_nfce.Visible = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.DFe_aplicativo.My.Resources.Resources.Barra_Status
-        Me.PictureBox1.Location = New System.Drawing.Point(127, 79)
+        Me.PictureBox1.Location = New System.Drawing.Point(169, 97)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(191, 16)
+        Me.PictureBox1.Size = New System.Drawing.Size(255, 20)
         Me.PictureBox1.TabIndex = 104
         Me.PictureBox1.TabStop = False
         '
@@ -1958,10 +2105,11 @@ Partial Class frmdfe2
         '
         Me.txtinfo_nfce.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtinfo_nfce.ForeColor = System.Drawing.Color.Blue
-        Me.txtinfo_nfce.Location = New System.Drawing.Point(3, 3)
+        Me.txtinfo_nfce.Location = New System.Drawing.Point(4, 4)
+        Me.txtinfo_nfce.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtinfo_nfce.Multiline = True
         Me.txtinfo_nfce.Name = "txtinfo_nfce"
-        Me.txtinfo_nfce.Size = New System.Drawing.Size(440, 74)
+        Me.txtinfo_nfce.Size = New System.Drawing.Size(585, 90)
         Me.txtinfo_nfce.TabIndex = 0
         Me.txtinfo_nfce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1973,18 +2121,20 @@ Partial Class frmdfe2
         Me.Paneldata.Controls.Add(Me.lbldatafim)
         Me.Paneldata.Controls.Add(Me.mskdatainicial)
         Me.Paneldata.Controls.Add(Me.mskdatafinal)
-        Me.Paneldata.Location = New System.Drawing.Point(727, 8)
+        Me.Paneldata.Location = New System.Drawing.Point(969, 10)
+        Me.Paneldata.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Paneldata.Name = "Paneldata"
-        Me.Paneldata.Size = New System.Drawing.Size(216, 49)
+        Me.Paneldata.Size = New System.Drawing.Size(287, 60)
         Me.Paneldata.TabIndex = 40
         '
         'lbldataini
         '
         Me.lbldataini.AutoSize = True
         Me.lbldataini.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldataini.Location = New System.Drawing.Point(3, 3)
+        Me.lbldataini.Location = New System.Drawing.Point(4, 4)
+        Me.lbldataini.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbldataini.Name = "lbldataini"
-        Me.lbldataini.Size = New System.Drawing.Size(73, 16)
+        Me.lbldataini.Size = New System.Drawing.Size(93, 20)
         Me.lbldataini.TabIndex = 37
         Me.lbldataini.Text = "Data Inicial"
         '
@@ -1992,26 +2142,29 @@ Partial Class frmdfe2
         '
         Me.lbldatafim.AutoSize = True
         Me.lbldatafim.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbldatafim.Location = New System.Drawing.Point(108, 3)
+        Me.lbldatafim.Location = New System.Drawing.Point(144, 4)
+        Me.lbldatafim.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbldatafim.Name = "lbldatafim"
-        Me.lbldatafim.Size = New System.Drawing.Size(68, 16)
+        Me.lbldatafim.Size = New System.Drawing.Size(86, 20)
         Me.lbldatafim.TabIndex = 38
         Me.lbldatafim.Text = "Data Final"
         '
         'mskdatainicial
         '
         Me.mskdatainicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.mskdatainicial.Location = New System.Drawing.Point(6, 22)
+        Me.mskdatainicial.Location = New System.Drawing.Point(8, 27)
+        Me.mskdatainicial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.mskdatainicial.Name = "mskdatainicial"
-        Me.mskdatainicial.Size = New System.Drawing.Size(99, 20)
+        Me.mskdatainicial.Size = New System.Drawing.Size(131, 22)
         Me.mskdatainicial.TabIndex = 36
         '
         'mskdatafinal
         '
         Me.mskdatafinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.mskdatafinal.Location = New System.Drawing.Point(111, 22)
+        Me.mskdatafinal.Location = New System.Drawing.Point(148, 27)
+        Me.mskdatafinal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.mskdatafinal.Name = "mskdatafinal"
-        Me.mskdatafinal.Size = New System.Drawing.Size(99, 20)
+        Me.mskdatafinal.Size = New System.Drawing.Size(131, 22)
         Me.mskdatafinal.TabIndex = 35
         '
         'dgvws
@@ -2031,6 +2184,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvws.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
+        Me.dgvws.ColumnHeadersHeight = 29
         Me.dgvws.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column2, Me.caixa, Me.status, Me.rv, Me.nnfce, Me.data_emi, Me.chave_nfce, Me.xmotivo_grid, Me.nRec, Me.xml_nfcegrid, Me.prot_grid, Me.chave_cont, Me.vlr_nfce, Me.chvpar, Me.Tipo})
         Me.dgvws.ContextMenuStrip = Me.ContextMenuStrip2
         DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -2043,7 +2197,8 @@ Partial Class frmdfe2
         Me.dgvws.DefaultCellStyle = DataGridViewCellStyle27
         Me.dgvws.EnableHeadersVisualStyles = False
         Me.dgvws.GridColor = System.Drawing.Color.Lime
-        Me.dgvws.Location = New System.Drawing.Point(3, 65)
+        Me.dgvws.Location = New System.Drawing.Point(4, 80)
+        Me.dgvws.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvws.Name = "dgvws"
         Me.dgvws.ReadOnly = True
         Me.dgvws.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -2062,12 +2217,13 @@ Partial Class frmdfe2
         Me.dgvws.RowsDefaultCellStyle = DataGridViewCellStyle29
         Me.dgvws.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.dgvws.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvws.Size = New System.Drawing.Size(1074, 540)
+        Me.dgvws.Size = New System.Drawing.Size(1432, 665)
         Me.dgvws.TabIndex = 9
         '
         'Column2
         '
         Me.Column2.HeaderText = ""
+        Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
         Me.Column2.Width = 25
@@ -2075,6 +2231,7 @@ Partial Class frmdfe2
         'caixa
         '
         Me.caixa.HeaderText = "Caixa"
+        Me.caixa.MinimumWidth = 6
         Me.caixa.Name = "caixa"
         Me.caixa.ReadOnly = True
         Me.caixa.Width = 45
@@ -2085,6 +2242,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.status.DefaultCellStyle = DataGridViewCellStyle24
         Me.status.HeaderText = "Status"
+        Me.status.MinimumWidth = 6
         Me.status.Name = "status"
         Me.status.ReadOnly = True
         Me.status.Width = 120
@@ -2092,6 +2250,7 @@ Partial Class frmdfe2
         'rv
         '
         Me.rv.HeaderText = "RV"
+        Me.rv.MinimumWidth = 6
         Me.rv.Name = "rv"
         Me.rv.ReadOnly = True
         Me.rv.Width = 70
@@ -2099,6 +2258,7 @@ Partial Class frmdfe2
         'nnfce
         '
         Me.nnfce.HeaderText = "Nº NFCe"
+        Me.nnfce.MinimumWidth = 6
         Me.nnfce.Name = "nnfce"
         Me.nnfce.ReadOnly = True
         Me.nnfce.Width = 80
@@ -2108,6 +2268,7 @@ Partial Class frmdfe2
         DataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         Me.data_emi.DefaultCellStyle = DataGridViewCellStyle25
         Me.data_emi.HeaderText = "Data Emissao"
+        Me.data_emi.MinimumWidth = 6
         Me.data_emi.Name = "data_emi"
         Me.data_emi.ReadOnly = True
         Me.data_emi.Width = 120
@@ -2115,6 +2276,7 @@ Partial Class frmdfe2
         'chave_nfce
         '
         Me.chave_nfce.HeaderText = "Chave NFCe"
+        Me.chave_nfce.MinimumWidth = 6
         Me.chave_nfce.Name = "chave_nfce"
         Me.chave_nfce.ReadOnly = True
         Me.chave_nfce.Width = 280
@@ -2122,6 +2284,7 @@ Partial Class frmdfe2
         'xmotivo_grid
         '
         Me.xmotivo_grid.HeaderText = "xMotivo"
+        Me.xmotivo_grid.MinimumWidth = 6
         Me.xmotivo_grid.Name = "xmotivo_grid"
         Me.xmotivo_grid.ReadOnly = True
         Me.xmotivo_grid.Width = 200
@@ -2129,36 +2292,45 @@ Partial Class frmdfe2
         'nRec
         '
         Me.nRec.HeaderText = "nRec"
+        Me.nRec.MinimumWidth = 6
         Me.nRec.Name = "nRec"
         Me.nRec.ReadOnly = True
         Me.nRec.Visible = False
+        Me.nRec.Width = 125
         '
         'xml_nfcegrid
         '
         Me.xml_nfcegrid.HeaderText = "xml"
+        Me.xml_nfcegrid.MinimumWidth = 6
         Me.xml_nfcegrid.Name = "xml_nfcegrid"
         Me.xml_nfcegrid.ReadOnly = True
         Me.xml_nfcegrid.Visible = False
+        Me.xml_nfcegrid.Width = 125
         '
         'prot_grid
         '
         Me.prot_grid.HeaderText = "prot_grid"
+        Me.prot_grid.MinimumWidth = 6
         Me.prot_grid.Name = "prot_grid"
         Me.prot_grid.ReadOnly = True
         Me.prot_grid.Visible = False
+        Me.prot_grid.Width = 125
         '
         'chave_cont
         '
         Me.chave_cont.HeaderText = "chave_cont"
+        Me.chave_cont.MinimumWidth = 6
         Me.chave_cont.Name = "chave_cont"
         Me.chave_cont.ReadOnly = True
         Me.chave_cont.Visible = False
+        Me.chave_cont.Width = 125
         '
         'vlr_nfce
         '
         DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
         Me.vlr_nfce.DefaultCellStyle = DataGridViewCellStyle26
         Me.vlr_nfce.HeaderText = "Valor NFCe"
+        Me.vlr_nfce.MinimumWidth = 6
         Me.vlr_nfce.Name = "vlr_nfce"
         Me.vlr_nfce.ReadOnly = True
         Me.vlr_nfce.Width = 80
@@ -2166,60 +2338,64 @@ Partial Class frmdfe2
         'chvpar
         '
         Me.chvpar.HeaderText = "chvpar"
+        Me.chvpar.MinimumWidth = 6
         Me.chvpar.Name = "chvpar"
         Me.chvpar.ReadOnly = True
         Me.chvpar.Visible = False
+        Me.chvpar.Width = 125
         '
         'Tipo
         '
         Me.Tipo.HeaderText = "tipo"
+        Me.Tipo.MinimumWidth = 6
         Me.Tipo.Name = "Tipo"
         Me.Tipo.ReadOnly = True
         Me.Tipo.Width = 32
         '
         'ContextMenuStrip2
         '
+        Me.ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.XmlToolStripMenuItem, Me.CancelamentoPorSubstituicaoToolStripMenuItem, Me.EnviarContigenciaToolStripMenuItem, Me.ReprocessarXMLToolStripMenuItem, Me.ConsultaRetornoSEFAZToolStripMenuItem})
         Me.ContextMenuStrip2.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip2.Size = New System.Drawing.Size(241, 136)
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(284, 148)
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(240, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(283, 24)
         Me.ToolStripMenuItem1.Text = "Status NFCe"
         '
         'XmlToolStripMenuItem
         '
         Me.XmlToolStripMenuItem.Name = "XmlToolStripMenuItem"
-        Me.XmlToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
+        Me.XmlToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.XmlToolStripMenuItem.Text = "Visualizar xml"
         '
         'CancelamentoPorSubstituicaoToolStripMenuItem
         '
         Me.CancelamentoPorSubstituicaoToolStripMenuItem.Enabled = False
         Me.CancelamentoPorSubstituicaoToolStripMenuItem.Name = "CancelamentoPorSubstituicaoToolStripMenuItem"
-        Me.CancelamentoPorSubstituicaoToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
+        Me.CancelamentoPorSubstituicaoToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.CancelamentoPorSubstituicaoToolStripMenuItem.Text = "Cancelamento Por Substituicao"
         '
         'EnviarContigenciaToolStripMenuItem
         '
         Me.EnviarContigenciaToolStripMenuItem.Enabled = False
         Me.EnviarContigenciaToolStripMenuItem.Name = "EnviarContigenciaToolStripMenuItem"
-        Me.EnviarContigenciaToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
+        Me.EnviarContigenciaToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.EnviarContigenciaToolStripMenuItem.Text = "Enviar Contigencia"
         '
         'ReprocessarXMLToolStripMenuItem
         '
         Me.ReprocessarXMLToolStripMenuItem.Enabled = False
         Me.ReprocessarXMLToolStripMenuItem.Name = "ReprocessarXMLToolStripMenuItem"
-        Me.ReprocessarXMLToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
+        Me.ReprocessarXMLToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.ReprocessarXMLToolStripMenuItem.Text = "Reprocessar XML SEFAZ"
         '
         'ConsultaRetornoSEFAZToolStripMenuItem
         '
         Me.ConsultaRetornoSEFAZToolStripMenuItem.Name = "ConsultaRetornoSEFAZToolStripMenuItem"
-        Me.ConsultaRetornoSEFAZToolStripMenuItem.Size = New System.Drawing.Size(240, 22)
+        Me.ConsultaRetornoSEFAZToolStripMenuItem.Size = New System.Drawing.Size(283, 24)
         Me.ConsultaRetornoSEFAZToolStripMenuItem.Text = "Consulta Retorno SEFAZ"
         '
         'Button2
@@ -2230,9 +2406,10 @@ Partial Class frmdfe2
         Me.Button2.ForeColor = System.Drawing.Color.Red
         Me.Button2.Image = Global.DFe_aplicativo.My.Resources.Resources.block
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(6, 33)
+        Me.Button2.Location = New System.Drawing.Point(8, 41)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(159, 27)
+        Me.Button2.Size = New System.Drawing.Size(212, 33)
         Me.Button2.TabIndex = 53
         Me.Button2.Text = "   Resolver Pendentes"
         Me.Button2.UseVisualStyleBackColor = True
@@ -2245,9 +2422,10 @@ Partial Class frmdfe2
         Me.Button4.ForeColor = System.Drawing.Color.SeaGreen
         Me.Button4.Image = Global.DFe_aplicativo.My.Resources.Resources.check
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(6, 4)
+        Me.Button4.Location = New System.Drawing.Point(8, 5)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(159, 27)
+        Me.Button4.Size = New System.Drawing.Size(212, 33)
         Me.Button4.TabIndex = 51
         Me.Button4.Text = "   &Status SEFAZ"
         Me.Button4.UseVisualStyleBackColor = True
@@ -2260,9 +2438,10 @@ Partial Class frmdfe2
         Me.btnpesquisar.ForeColor = System.Drawing.Color.Blue
         Me.btnpesquisar.Image = Global.DFe_aplicativo.My.Resources.Resources.find_new_users
         Me.btnpesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnpesquisar.Location = New System.Drawing.Point(953, 30)
+        Me.btnpesquisar.Location = New System.Drawing.Point(1271, 37)
+        Me.btnpesquisar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnpesquisar.Name = "btnpesquisar"
-        Me.btnpesquisar.Size = New System.Drawing.Size(124, 27)
+        Me.btnpesquisar.Size = New System.Drawing.Size(165, 33)
         Me.btnpesquisar.TabIndex = 48
         Me.btnpesquisar.Text = "&Pesquisar"
         Me.btnpesquisar.UseVisualStyleBackColor = True
@@ -2293,20 +2472,21 @@ Partial Class frmdfe2
         '
         'ContextMenuStrip_Notify
         '
+        Me.ContextMenuStrip_Notify.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ContextMenuStrip_Notify.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AbrirToolStripMenuItem, Me.SairToolStripMenuItem})
         Me.ContextMenuStrip_Notify.Name = "ContextMenuStrip_Notify"
-        Me.ContextMenuStrip_Notify.Size = New System.Drawing.Size(101, 48)
+        Me.ContextMenuStrip_Notify.Size = New System.Drawing.Size(112, 52)
         '
         'AbrirToolStripMenuItem
         '
         Me.AbrirToolStripMenuItem.Name = "AbrirToolStripMenuItem"
-        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
+        Me.AbrirToolStripMenuItem.Size = New System.Drawing.Size(111, 24)
         Me.AbrirToolStripMenuItem.Text = "Abrir"
         '
         'SairToolStripMenuItem
         '
         Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
-        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
+        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(111, 24)
         Me.SairToolStripMenuItem.Text = "Sair"
         '
         'lbllicenca
@@ -2316,9 +2496,10 @@ Partial Class frmdfe2
         Me.lbllicenca.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbllicenca.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbllicenca.ForeColor = System.Drawing.Color.White
-        Me.lbllicenca.Location = New System.Drawing.Point(340, 6)
+        Me.lbllicenca.Location = New System.Drawing.Point(453, 7)
+        Me.lbllicenca.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbllicenca.Name = "lbllicenca"
-        Me.lbllicenca.Size = New System.Drawing.Size(62, 16)
+        Me.lbllicenca.Size = New System.Drawing.Size(75, 20)
         Me.lbllicenca.TabIndex = 111
         Me.lbllicenca.Text = "Label10"
         Me.ToolTip1.SetToolTip(Me.lbllicenca, "Clique aqui para visualizar a licença")
@@ -2344,9 +2525,10 @@ Partial Class frmdfe2
         Me.Button14.ForeColor = System.Drawing.Color.Red
         Me.Button14.Image = Global.DFe_aplicativo.My.Resources.Resources.application_sidebar_list
         Me.Button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button14.Location = New System.Drawing.Point(789, 1)
+        Me.Button14.Location = New System.Drawing.Point(1052, 1)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(158, 24)
+        Me.Button14.Size = New System.Drawing.Size(211, 30)
         Me.Button14.TabIndex = 112
         Me.Button14.Text = "Trocar empresa"
         Me.Button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2361,9 +2543,10 @@ Partial Class frmdfe2
         Me.bntpar.ForeColor = System.Drawing.Color.Blue
         Me.bntpar.Image = Global.DFe_aplicativo.My.Resources.Resources.database_import
         Me.bntpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.bntpar.Location = New System.Drawing.Point(965, 2)
+        Me.bntpar.Location = New System.Drawing.Point(1287, 2)
+        Me.bntpar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.bntpar.Name = "bntpar"
-        Me.bntpar.Size = New System.Drawing.Size(123, 24)
+        Me.bntpar.Size = New System.Drawing.Size(164, 30)
         Me.bntpar.TabIndex = 110
         Me.bntpar.Text = "Parametros"
         Me.bntpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2378,9 +2561,10 @@ Partial Class frmdfe2
         Me.btndifal.ForeColor = System.Drawing.Color.Red
         Me.btndifal.Image = Global.DFe_aplicativo.My.Resources.Resources.application_sidebar_list
         Me.btndifal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btndifal.Location = New System.Drawing.Point(833, 2)
+        Me.btndifal.Location = New System.Drawing.Point(1111, 2)
+        Me.btndifal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btndifal.Name = "btndifal"
-        Me.btndifal.Size = New System.Drawing.Size(113, 24)
+        Me.btndifal.Size = New System.Drawing.Size(151, 30)
         Me.btndifal.TabIndex = 109
         Me.btndifal.Text = "Tela Difal"
         Me.btndifal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -2389,9 +2573,9 @@ Partial Class frmdfe2
         '
         'frmdfe2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1101, 672)
+        Me.ClientSize = New System.Drawing.Size(1468, 827)
         Me.Controls.Add(Me.Button14)
         Me.Controls.Add(Me.lbllicenca)
         Me.Controls.Add(Me.bntpar)
@@ -2399,6 +2583,7 @@ Partial Class frmdfe2
         Me.Controls.Add(Me.Tabdfe)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "frmdfe2"
         Me.Text = "Tela DFe       versao 1.0.0   14-10-2019      .Net 4.8"
