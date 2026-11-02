@@ -281,7 +281,7 @@ Partial Class frmdfe2
         Me.Tabdfe.Controls.Add(Me.TabPage2)
         Me.Tabdfe.Controls.Add(Me.TabPage1)
         Me.Tabdfe.Location = New System.Drawing.Point(7, 6)
-        Me.Tabdfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Tabdfe.Margin = New System.Windows.Forms.Padding(4)
         Me.Tabdfe.Name = "Tabdfe"
         Me.Tabdfe.SelectedIndex = 0
         Me.Tabdfe.Size = New System.Drawing.Size(1453, 821)
@@ -299,9 +299,9 @@ Partial Class frmdfe2
         Me.TabPage1_dfe.Controls.Add(Me.Grouper2)
         Me.TabPage1_dfe.Controls.Add(Me.Button1)
         Me.TabPage1_dfe.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1_dfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1_dfe.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1_dfe.Name = "TabPage1_dfe"
-        Me.TabPage1_dfe.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1_dfe.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1_dfe.Size = New System.Drawing.Size(1445, 792)
         Me.TabPage1_dfe.TabIndex = 0
         Me.TabPage1_dfe.Text = "NFe/CTe   "
@@ -326,7 +326,7 @@ Partial Class frmdfe2
         Me.Grouper5.GroupImage = Nothing
         Me.Grouper5.GroupTitle = ""
         Me.Grouper5.Location = New System.Drawing.Point(4, 166)
-        Me.Grouper5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Grouper5.Margin = New System.Windows.Forms.Padding(4)
         Me.Grouper5.Name = "Grouper5"
         Me.Grouper5.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper5.PaintGroupBox = False
@@ -375,7 +375,7 @@ Partial Class frmdfe2
         Me.panel_chave.GroupImage = Nothing
         Me.panel_chave.GroupTitle = "Chsve acesso NF-e"
         Me.panel_chave.Location = New System.Drawing.Point(991, 37)
-        Me.panel_chave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.panel_chave.Margin = New System.Windows.Forms.Padding(4)
         Me.panel_chave.Name = "panel_chave"
         Me.panel_chave.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.panel_chave.PaintGroupBox = False
@@ -393,7 +393,7 @@ Partial Class frmdfe2
         Me.mskchave.ContextMenuStrip = Me.ContextMenuStrip1
         Me.mskchave.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         Me.mskchave.Location = New System.Drawing.Point(8, 39)
-        Me.mskchave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.mskchave.Margin = New System.Windows.Forms.Padding(4)
         Me.mskchave.Mask = "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000"
         Me.mskchave.Name = "mskchave"
         Me.mskchave.Size = New System.Drawing.Size(405, 22)
@@ -523,7 +523,7 @@ Partial Class frmdfe2
         Me.dgvnfe.EnableHeadersVisualStyles = False
         Me.dgvnfe.GridColor = System.Drawing.Color.Lime
         Me.dgvnfe.Location = New System.Drawing.Point(8, 37)
-        Me.dgvnfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvnfe.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvnfe.Name = "dgvnfe"
         Me.dgvnfe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -718,7 +718,7 @@ Partial Class frmdfe2
         Me.Grouper4.GroupImage = Nothing
         Me.Grouper4.GroupTitle = ""
         Me.Grouper4.Location = New System.Drawing.Point(4, 506)
-        Me.Grouper4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Grouper4.Margin = New System.Windows.Forms.Padding(4)
         Me.Grouper4.Name = "Grouper4"
         Me.Grouper4.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper4.PaintGroupBox = False
@@ -732,7 +732,7 @@ Partial Class frmdfe2
         'Button17
         '
         Me.Button17.Location = New System.Drawing.Point(351, 14)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(4)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(100, 28)
         Me.Button17.TabIndex = 118
@@ -781,7 +781,7 @@ Partial Class frmdfe2
         Me.dgverro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgverro.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column3, Me.Column4})
         Me.dgverro.Location = New System.Drawing.Point(276, 63)
-        Me.dgverro.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgverro.Margin = New System.Windows.Forms.Padding(4)
         Me.dgverro.Name = "dgverro"
         Me.dgverro.RowHeadersWidth = 51
         Me.dgverro.Size = New System.Drawing.Size(888, 176)
@@ -854,7 +854,7 @@ Partial Class frmdfe2
         Me.dgvcte.EnableHeadersVisualStyles = False
         Me.dgvcte.GridColor = System.Drawing.Color.Lime
         Me.dgvcte.Location = New System.Drawing.Point(4, 41)
-        Me.dgvcte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvcte.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvcte.Name = "dgvcte"
         Me.dgvcte.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -971,7 +971,7 @@ Partial Class frmdfe2
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(1236, 124)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(52, 46)
         Me.PictureBox2.TabIndex = 94
@@ -991,7 +991,7 @@ Partial Class frmdfe2
         Me.Grouper1.GroupImage = Nothing
         Me.Grouper1.GroupTitle = "Certificado Digital"
         Me.Grouper1.Location = New System.Drawing.Point(1236, 16)
-        Me.Grouper1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Grouper1.Margin = New System.Windows.Forms.Padding(4)
         Me.Grouper1.Name = "Grouper1"
         Me.Grouper1.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper1.PaintGroupBox = False
@@ -1030,7 +1030,7 @@ Partial Class frmdfe2
         '
         Me.txtvenc_info.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txtvenc_info.Location = New System.Drawing.Point(35, 55)
-        Me.txtvenc_info.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtvenc_info.Margin = New System.Windows.Forms.Padding(4)
         Me.txtvenc_info.Name = "txtvenc_info"
         Me.txtvenc_info.ReadOnly = True
         Me.txtvenc_info.Size = New System.Drawing.Size(127, 22)
@@ -1058,7 +1058,7 @@ Partial Class frmdfe2
         Me.chkcusto.BackColor = System.Drawing.Color.Transparent
         Me.chkcusto.ForeColor = System.Drawing.Color.Blue
         Me.chkcusto.Location = New System.Drawing.Point(64, 320)
-        Me.chkcusto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkcusto.Margin = New System.Windows.Forms.Padding(4)
         Me.chkcusto.Name = "chkcusto"
         Me.chkcusto.Size = New System.Drawing.Size(109, 20)
         Me.chkcusto.TabIndex = 108
@@ -1084,7 +1084,7 @@ Partial Class frmdfe2
         Me.Grouper3.GroupImage = Nothing
         Me.Grouper3.GroupTitle = "Painel Informações"
         Me.Grouper3.Location = New System.Drawing.Point(8, 2)
-        Me.Grouper3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Grouper3.Margin = New System.Windows.Forms.Padding(4)
         Me.Grouper3.Name = "Grouper3"
         Me.Grouper3.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper3.PaintGroupBox = False
@@ -1101,7 +1101,7 @@ Partial Class frmdfe2
         Me.chkxml.BackColor = System.Drawing.Color.Transparent
         Me.chkxml.ForeColor = System.Drawing.Color.Blue
         Me.chkxml.Location = New System.Drawing.Point(309, 15)
-        Me.chkxml.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkxml.Margin = New System.Windows.Forms.Padding(4)
         Me.chkxml.Name = "chkxml"
         Me.chkxml.Size = New System.Drawing.Size(128, 20)
         Me.chkxml.TabIndex = 109
@@ -1114,7 +1114,7 @@ Partial Class frmdfe2
         Me.txtinfodfe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtinfodfe.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtinfodfe.Location = New System.Drawing.Point(9, 36)
-        Me.txtinfodfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtinfodfe.Margin = New System.Windows.Forms.Padding(4)
         Me.txtinfodfe.Multiline = True
         Me.txtinfodfe.Name = "txtinfodfe"
         Me.txtinfodfe.ReadOnly = True
@@ -1129,7 +1129,7 @@ Partial Class frmdfe2
         Me.chkmanifes.BackColor = System.Drawing.Color.Transparent
         Me.chkmanifes.ForeColor = System.Drawing.Color.Blue
         Me.chkmanifes.Location = New System.Drawing.Point(455, 15)
-        Me.chkmanifes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkmanifes.Margin = New System.Windows.Forms.Padding(4)
         Me.chkmanifes.Name = "chkmanifes"
         Me.chkmanifes.Size = New System.Drawing.Size(180, 20)
         Me.chkmanifes.TabIndex = 70
@@ -1140,7 +1140,7 @@ Partial Class frmdfe2
         '
         Me.Pic_prog.Image = Global.DFe_aplicativo.My.Resources.Resources.Barra_Status
         Me.Pic_prog.Location = New System.Drawing.Point(9, 134)
-        Me.Pic_prog.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Pic_prog.Margin = New System.Windows.Forms.Padding(4)
         Me.Pic_prog.Name = "Pic_prog"
         Me.Pic_prog.Size = New System.Drawing.Size(255, 20)
         Me.Pic_prog.TabIndex = 103
@@ -1154,7 +1154,7 @@ Partial Class frmdfe2
         Me.bntcancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.bntcancelar.ForeColor = System.Drawing.Color.Red
         Me.bntcancelar.Location = New System.Drawing.Point(517, 133)
-        Me.bntcancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.bntcancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.bntcancelar.Name = "bntcancelar"
         Me.bntcancelar.Size = New System.Drawing.Size(147, 26)
         Me.bntcancelar.TabIndex = 104
@@ -1167,7 +1167,7 @@ Partial Class frmdfe2
         Me.txttotal_reg.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txttotal_reg.Enabled = False
         Me.txttotal_reg.Location = New System.Drawing.Point(436, 133)
-        Me.txttotal_reg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txttotal_reg.Margin = New System.Windows.Forms.Padding(4)
         Me.txttotal_reg.Name = "txttotal_reg"
         Me.txttotal_reg.Size = New System.Drawing.Size(63, 22)
         Me.txttotal_reg.TabIndex = 107
@@ -1213,7 +1213,7 @@ Partial Class frmdfe2
         Me.Grouper2.GroupImage = Nothing
         Me.Grouper2.GroupTitle = "CNPJ empresa:   ________________                            "
         Me.Grouper2.Location = New System.Drawing.Point(693, 4)
-        Me.Grouper2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Grouper2.Margin = New System.Windows.Forms.Padding(4)
         Me.Grouper2.Name = "Grouper2"
         Me.Grouper2.Padding = New System.Windows.Forms.Padding(27, 25, 27, 25)
         Me.Grouper2.PaintGroupBox = False
@@ -1230,7 +1230,7 @@ Partial Class frmdfe2
         Me.chkBucketS3.Checked = True
         Me.chkBucketS3.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkBucketS3.Location = New System.Drawing.Point(333, 15)
-        Me.chkBucketS3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkBucketS3.Margin = New System.Windows.Forms.Padding(4)
         Me.chkBucketS3.Name = "chkBucketS3"
         Me.chkBucketS3.Size = New System.Drawing.Size(120, 20)
         Me.chkBucketS3.TabIndex = 122
@@ -1282,7 +1282,7 @@ Partial Class frmdfe2
         Me.cbocnpjdfe.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.cbocnpjdfe.FormattingEnabled = True
         Me.cbocnpjdfe.Location = New System.Drawing.Point(151, 2)
-        Me.cbocnpjdfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbocnpjdfe.Margin = New System.Windows.Forms.Padding(4)
         Me.cbocnpjdfe.Name = "cbocnpjdfe"
         Me.cbocnpjdfe.Size = New System.Drawing.Size(145, 24)
         Me.cbocnpjdfe.TabIndex = 102
@@ -1318,7 +1318,7 @@ Partial Class frmdfe2
         Me.txtmaxNSU.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtmaxNSU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtmaxNSU.Location = New System.Drawing.Point(16, 108)
-        Me.txtmaxNSU.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtmaxNSU.Margin = New System.Windows.Forms.Padding(4)
         Me.txtmaxNSU.Name = "txtmaxNSU"
         Me.txtmaxNSU.ReadOnly = True
         Me.txtmaxNSU.Size = New System.Drawing.Size(145, 22)
@@ -1345,7 +1345,7 @@ Partial Class frmdfe2
         Me.txtultnsudfe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtultnsudfe.ContextMenuStrip = Me.ContextMenuStrip3
         Me.txtultnsudfe.Location = New System.Drawing.Point(16, 57)
-        Me.txtultnsudfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtultnsudfe.Margin = New System.Windows.Forms.Padding(4)
         Me.txtultnsudfe.Name = "txtultnsudfe"
         Me.txtultnsudfe.Size = New System.Drawing.Size(145, 22)
         Me.txtultnsudfe.TabIndex = 16
@@ -1372,7 +1372,7 @@ Partial Class frmdfe2
         Me.cboambdfe.FormattingEnabled = True
         Me.cboambdfe.Items.AddRange(New Object() {"1-Produção", "2-Homologação"})
         Me.cboambdfe.Location = New System.Drawing.Point(329, 58)
-        Me.cboambdfe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboambdfe.Margin = New System.Windows.Forms.Padding(4)
         Me.cboambdfe.Name = "cboambdfe"
         Me.cboambdfe.Size = New System.Drawing.Size(173, 24)
         Me.cboambdfe.TabIndex = 18
@@ -1380,7 +1380,7 @@ Partial Class frmdfe2
         'bar_status
         '
         Me.bar_status.Location = New System.Drawing.Point(333, -1)
-        Me.bar_status.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.bar_status.Margin = New System.Windows.Forms.Padding(4)
         Me.bar_status.Name = "bar_status"
         Me.bar_status.Size = New System.Drawing.Size(199, 12)
         Me.bar_status.TabIndex = 107
@@ -1395,7 +1395,7 @@ Partial Class frmdfe2
         Me.bntpesqDFe.Image = CType(resources.GetObject("bntpesqDFe.Image"), System.Drawing.Image)
         Me.bntpesqDFe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bntpesqDFe.Location = New System.Drawing.Point(329, 98)
-        Me.bntpesqDFe.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.bntpesqDFe.Margin = New System.Windows.Forms.Padding(4)
         Me.bntpesqDFe.Name = "bntpesqDFe"
         Me.bntpesqDFe.Size = New System.Drawing.Size(175, 34)
         Me.bntpesqDFe.TabIndex = 49
@@ -1421,7 +1421,7 @@ Partial Class frmdfe2
         Me.txtultnsucte.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.txtultnsucte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtultnsucte.Location = New System.Drawing.Point(173, 58)
-        Me.txtultnsucte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtultnsucte.Margin = New System.Windows.Forms.Padding(4)
         Me.txtultnsucte.Name = "txtultnsucte"
         Me.txtultnsucte.ReadOnly = True
         Me.txtultnsucte.Size = New System.Drawing.Size(145, 22)
@@ -1434,7 +1434,7 @@ Partial Class frmdfe2
         Me.txtmaxnsucte.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtmaxnsucte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtmaxnsucte.Location = New System.Drawing.Point(172, 108)
-        Me.txtmaxnsucte.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtmaxnsucte.Margin = New System.Windows.Forms.Padding(4)
         Me.txtmaxnsucte.Name = "txtmaxnsucte"
         Me.txtmaxnsucte.ReadOnly = True
         Me.txtmaxnsucte.Size = New System.Drawing.Size(145, 22)
@@ -1458,7 +1458,7 @@ Partial Class frmdfe2
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(1207, 281)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 28)
         Me.Button1.TabIndex = 106
@@ -1491,9 +1491,9 @@ Partial Class frmdfe2
         Me.TabPage2.Controls.Add(Me.picoff)
         Me.TabPage2.Controls.Add(Me.picon)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(1445, 792)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Servidor Web"
@@ -1506,7 +1506,7 @@ Partial Class frmdfe2
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button15.Location = New System.Drawing.Point(8, 544)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(4)
         Me.Button15.Name = "Button15"
         Me.Button15.Size = New System.Drawing.Size(151, 37)
         Me.Button15.TabIndex = 48
@@ -1530,7 +1530,7 @@ Partial Class frmdfe2
         Me.bntsintegra.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bntsintegra.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.bntsintegra.Location = New System.Drawing.Point(8, 500)
-        Me.bntsintegra.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.bntsintegra.Margin = New System.Windows.Forms.Padding(4)
         Me.bntsintegra.Name = "bntsintegra"
         Me.bntsintegra.Size = New System.Drawing.Size(151, 37)
         Me.bntsintegra.TabIndex = 46
@@ -1544,7 +1544,7 @@ Partial Class frmdfe2
         Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button13.Location = New System.Drawing.Point(8, 455)
-        Me.Button13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(4)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(151, 37)
         Me.Button13.TabIndex = 45
@@ -1558,7 +1558,7 @@ Partial Class frmdfe2
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button12.Location = New System.Drawing.Point(8, 322)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(151, 37)
         Me.Button12.TabIndex = 44
@@ -1572,7 +1572,7 @@ Partial Class frmdfe2
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button11.Location = New System.Drawing.Point(8, 411)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(4)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(151, 37)
         Me.Button11.TabIndex = 43
@@ -1586,7 +1586,7 @@ Partial Class frmdfe2
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button10.Location = New System.Drawing.Point(8, 367)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(4)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(151, 37)
         Me.Button10.TabIndex = 42
@@ -1600,7 +1600,7 @@ Partial Class frmdfe2
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button8.Location = New System.Drawing.Point(8, 145)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(151, 37)
         Me.Button8.TabIndex = 41
@@ -1614,7 +1614,7 @@ Partial Class frmdfe2
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button7.Location = New System.Drawing.Point(8, 234)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(151, 37)
         Me.Button7.TabIndex = 40
@@ -1628,7 +1628,7 @@ Partial Class frmdfe2
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button6.Location = New System.Drawing.Point(8, 190)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(151, 37)
         Me.Button6.TabIndex = 39
@@ -1642,7 +1642,7 @@ Partial Class frmdfe2
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button5.Location = New System.Drawing.Point(8, 278)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(151, 37)
         Me.Button5.TabIndex = 38
@@ -1657,9 +1657,9 @@ Partial Class frmdfe2
         Me.GroupBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.GroupBox1.Location = New System.Drawing.Point(201, 10)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(203, 84)
         Me.GroupBox1.TabIndex = 36
         Me.GroupBox1.TabStop = False
@@ -1682,7 +1682,7 @@ Partial Class frmdfe2
         '
         Me.Pic_off_inter.Image = Global.DFe_aplicativo.My.Resources.Resources.off
         Me.Pic_off_inter.Location = New System.Drawing.Point(61, 16)
-        Me.Pic_off_inter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Pic_off_inter.Margin = New System.Windows.Forms.Padding(4)
         Me.Pic_off_inter.Name = "Pic_off_inter"
         Me.Pic_off_inter.Size = New System.Drawing.Size(43, 43)
         Me.Pic_off_inter.TabIndex = 1
@@ -1693,7 +1693,7 @@ Partial Class frmdfe2
         '
         Me.Pic_on_inter.Image = Global.DFe_aplicativo.My.Resources.Resources.ONLINE1
         Me.Pic_on_inter.Location = New System.Drawing.Point(61, 16)
-        Me.Pic_on_inter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Pic_on_inter.Margin = New System.Windows.Forms.Padding(4)
         Me.Pic_on_inter.Name = "Pic_on_inter"
         Me.Pic_on_inter.Size = New System.Drawing.Size(69, 64)
         Me.Pic_on_inter.TabIndex = 0
@@ -1715,7 +1715,7 @@ Partial Class frmdfe2
         Me.cbocert.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbocert.FormattingEnabled = True
         Me.cbocert.Location = New System.Drawing.Point(1185, 30)
-        Me.cbocert.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbocert.Margin = New System.Windows.Forms.Padding(4)
         Me.cbocert.Name = "cbocert"
         Me.cbocert.Size = New System.Drawing.Size(160, 24)
         Me.cbocert.TabIndex = 34
@@ -1727,7 +1727,7 @@ Partial Class frmdfe2
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button9.ForeColor = System.Drawing.Color.Red
         Me.Button9.Location = New System.Drawing.Point(8, 65)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(4)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(151, 37)
         Me.Button9.TabIndex = 32
@@ -1742,7 +1742,7 @@ Partial Class frmdfe2
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Button3.Location = New System.Drawing.Point(8, 21)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(151, 37)
         Me.Button3.TabIndex = 31
@@ -1813,7 +1813,7 @@ Partial Class frmdfe2
         Me.dgvhost.DefaultCellStyle = DataGridViewCellStyle20
         Me.dgvhost.EnableHeadersVisualStyles = False
         Me.dgvhost.Location = New System.Drawing.Point(201, 117)
-        Me.dgvhost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvhost.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvhost.Name = "dgvhost"
         DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control
@@ -1847,7 +1847,7 @@ Partial Class frmdfe2
         Me.picoff.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picoff.Image = Global.DFe_aplicativo.My.Resources.Resources.power
         Me.picoff.Location = New System.Drawing.Point(821, 12)
-        Me.picoff.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.picoff.Margin = New System.Windows.Forms.Padding(4)
         Me.picoff.Name = "picoff"
         Me.picoff.Size = New System.Drawing.Size(68, 59)
         Me.picoff.TabIndex = 29
@@ -1858,7 +1858,7 @@ Partial Class frmdfe2
         Me.picon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.picon.Image = Global.DFe_aplicativo.My.Resources.Resources.ligado
         Me.picon.Location = New System.Drawing.Point(703, 10)
-        Me.picon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.picon.Margin = New System.Windows.Forms.Padding(4)
         Me.picon.Name = "picon"
         Me.picon.Size = New System.Drawing.Size(187, 59)
         Me.picon.TabIndex = 27
@@ -1888,9 +1888,9 @@ Partial Class frmdfe2
         Me.TabPage1.Controls.Add(Me.Button4)
         Me.TabPage1.Controls.Add(Me.btnpesquisar)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(1445, 792)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "Painel NFC-e"
@@ -1901,7 +1901,7 @@ Partial Class frmdfe2
         Me.chkc.AutoSize = True
         Me.chkc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkc.Location = New System.Drawing.Point(228, 37)
-        Me.chkc.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkc.Margin = New System.Windows.Forms.Padding(4)
         Me.chkc.Name = "chkc"
         Me.chkc.Size = New System.Drawing.Size(71, 22)
         Me.chkc.TabIndex = 66
@@ -1913,7 +1913,7 @@ Partial Class frmdfe2
         Me.chkcaixa.AutoSize = True
         Me.chkcaixa.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkcaixa.Location = New System.Drawing.Point(504, 15)
-        Me.chkcaixa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkcaixa.Margin = New System.Windows.Forms.Padding(4)
         Me.chkcaixa.Name = "chkcaixa"
         Me.chkcaixa.Size = New System.Drawing.Size(72, 22)
         Me.chkcaixa.TabIndex = 65
@@ -1925,7 +1925,7 @@ Partial Class frmdfe2
         Me.chkstatus.AutoSize = True
         Me.chkstatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkstatus.Location = New System.Drawing.Point(315, 15)
-        Me.chkstatus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkstatus.Margin = New System.Windows.Forms.Padding(4)
         Me.chkstatus.Name = "chkstatus"
         Me.chkstatus.Size = New System.Drawing.Size(126, 22)
         Me.chkstatus.TabIndex = 64
@@ -1939,7 +1939,7 @@ Partial Class frmdfe2
         Me.cbostatus.FormattingEnabled = True
         Me.cbostatus.Items.AddRange(New Object() {"NFC-e Autorizada", "NFC-e Cancelada", "NFC-e Inutilizada"})
         Me.cbostatus.Location = New System.Drawing.Point(315, 37)
-        Me.cbostatus.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbostatus.Margin = New System.Windows.Forms.Padding(4)
         Me.cbostatus.Name = "cbostatus"
         Me.cbostatus.Size = New System.Drawing.Size(179, 24)
         Me.cbostatus.TabIndex = 63
@@ -1949,7 +1949,7 @@ Partial Class frmdfe2
         Me.chkdest.AutoSize = True
         Me.chkdest.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkdest.Location = New System.Drawing.Point(795, 15)
-        Me.chkdest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkdest.Margin = New System.Windows.Forms.Padding(4)
         Me.chkdest.Name = "chkdest"
         Me.chkdest.Size = New System.Drawing.Size(119, 22)
         Me.chkdest.TabIndex = 62
@@ -1960,7 +1960,7 @@ Partial Class frmdfe2
         '
         Me.mskdest.Enabled = False
         Me.mskdest.Location = New System.Drawing.Point(795, 38)
-        Me.mskdest.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.mskdest.Margin = New System.Windows.Forms.Padding(4)
         Me.mskdest.Mask = "00,000,000/0000-00"
         Me.mskdest.Name = "mskdest"
         Me.mskdest.Size = New System.Drawing.Size(157, 22)
@@ -1973,7 +1973,7 @@ Partial Class frmdfe2
         Me.cbocaixa.Enabled = False
         Me.cbocaixa.FormattingEnabled = True
         Me.cbocaixa.Location = New System.Drawing.Point(504, 37)
-        Me.cbocaixa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbocaixa.Margin = New System.Windows.Forms.Padding(4)
         Me.cbocaixa.Name = "cbocaixa"
         Me.cbocaixa.Size = New System.Drawing.Size(81, 24)
         Me.cbocaixa.TabIndex = 59
@@ -1983,7 +1983,7 @@ Partial Class frmdfe2
         Me.chknumero.AutoSize = True
         Me.chknumero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chknumero.Location = New System.Drawing.Point(595, 15)
-        Me.chknumero.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chknumero.Margin = New System.Windows.Forms.Padding(4)
         Me.chknumero.Name = "chknumero"
         Me.chknumero.Size = New System.Drawing.Size(97, 22)
         Me.chknumero.TabIndex = 58
@@ -1994,7 +1994,7 @@ Partial Class frmdfe2
         '
         Me.txtnumero.Enabled = False
         Me.txtnumero.Location = New System.Drawing.Point(595, 38)
-        Me.txtnumero.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtnumero.Margin = New System.Windows.Forms.Padding(4)
         Me.txtnumero.Name = "txtnumero"
         Me.txtnumero.Size = New System.Drawing.Size(100, 22)
         Me.txtnumero.TabIndex = 57
@@ -2004,7 +2004,7 @@ Partial Class frmdfe2
         Me.chkrv.AutoSize = True
         Me.chkrv.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkrv.Location = New System.Drawing.Point(704, 15)
-        Me.chkrv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkrv.Margin = New System.Windows.Forms.Padding(4)
         Me.chkrv.Name = "chkrv"
         Me.chkrv.Size = New System.Drawing.Size(52, 22)
         Me.chkrv.TabIndex = 56
@@ -2015,7 +2015,7 @@ Partial Class frmdfe2
         '
         Me.txtrv.Enabled = False
         Me.txtrv.Location = New System.Drawing.Point(704, 38)
-        Me.txtrv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtrv.Margin = New System.Windows.Forms.Padding(4)
         Me.txtrv.Name = "txtrv"
         Me.txtrv.Size = New System.Drawing.Size(81, 22)
         Me.txtrv.TabIndex = 55
@@ -2026,7 +2026,7 @@ Partial Class frmdfe2
         Me.chkauto.Checked = True
         Me.chkauto.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkauto.Location = New System.Drawing.Point(1271, 10)
-        Me.chkauto.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkauto.Margin = New System.Windows.Forms.Padding(4)
         Me.chkauto.Name = "chkauto"
         Me.chkauto.Size = New System.Drawing.Size(118, 20)
         Me.chkauto.TabIndex = 54
@@ -2040,7 +2040,7 @@ Partial Class frmdfe2
         Me.Panel1.Controls.Add(Me.lbltimer)
         Me.Panel1.Controls.Add(Me.lblinfo_auto)
         Me.Panel1.Location = New System.Drawing.Point(4, 747)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1391, 41)
         Me.Panel1.TabIndex = 52
@@ -2072,7 +2072,7 @@ Partial Class frmdfe2
         '
         Me.chkclique.AutoSize = True
         Me.chkclique.Location = New System.Drawing.Point(12, 86)
-        Me.chkclique.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkclique.Margin = New System.Windows.Forms.Padding(4)
         Me.chkclique.Name = "chkclique"
         Me.chkclique.Size = New System.Drawing.Size(18, 17)
         Me.chkclique.TabIndex = 50
@@ -2085,7 +2085,7 @@ Partial Class frmdfe2
         Me.Panel_nfce.Controls.Add(Me.PictureBox1)
         Me.Panel_nfce.Controls.Add(Me.txtinfo_nfce)
         Me.Panel_nfce.Location = New System.Drawing.Point(413, 117)
-        Me.Panel_nfce.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel_nfce.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel_nfce.Name = "Panel_nfce"
         Me.Panel_nfce.Size = New System.Drawing.Size(597, 123)
         Me.Panel_nfce.TabIndex = 49
@@ -2095,7 +2095,7 @@ Partial Class frmdfe2
         '
         Me.PictureBox1.Image = Global.DFe_aplicativo.My.Resources.Resources.Barra_Status
         Me.PictureBox1.Location = New System.Drawing.Point(169, 97)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(255, 20)
         Me.PictureBox1.TabIndex = 104
@@ -2106,7 +2106,7 @@ Partial Class frmdfe2
         Me.txtinfo_nfce.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtinfo_nfce.ForeColor = System.Drawing.Color.Blue
         Me.txtinfo_nfce.Location = New System.Drawing.Point(4, 4)
-        Me.txtinfo_nfce.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtinfo_nfce.Margin = New System.Windows.Forms.Padding(4)
         Me.txtinfo_nfce.Multiline = True
         Me.txtinfo_nfce.Name = "txtinfo_nfce"
         Me.txtinfo_nfce.Size = New System.Drawing.Size(585, 90)
@@ -2122,7 +2122,7 @@ Partial Class frmdfe2
         Me.Paneldata.Controls.Add(Me.mskdatainicial)
         Me.Paneldata.Controls.Add(Me.mskdatafinal)
         Me.Paneldata.Location = New System.Drawing.Point(969, 10)
-        Me.Paneldata.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Paneldata.Margin = New System.Windows.Forms.Padding(4)
         Me.Paneldata.Name = "Paneldata"
         Me.Paneldata.Size = New System.Drawing.Size(287, 60)
         Me.Paneldata.TabIndex = 40
@@ -2153,7 +2153,7 @@ Partial Class frmdfe2
         '
         Me.mskdatainicial.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.mskdatainicial.Location = New System.Drawing.Point(8, 27)
-        Me.mskdatainicial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.mskdatainicial.Margin = New System.Windows.Forms.Padding(4)
         Me.mskdatainicial.Name = "mskdatainicial"
         Me.mskdatainicial.Size = New System.Drawing.Size(131, 22)
         Me.mskdatainicial.TabIndex = 36
@@ -2162,7 +2162,7 @@ Partial Class frmdfe2
         '
         Me.mskdatafinal.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.mskdatafinal.Location = New System.Drawing.Point(148, 27)
-        Me.mskdatafinal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.mskdatafinal.Margin = New System.Windows.Forms.Padding(4)
         Me.mskdatafinal.Name = "mskdatafinal"
         Me.mskdatafinal.Size = New System.Drawing.Size(131, 22)
         Me.mskdatafinal.TabIndex = 35
@@ -2198,7 +2198,7 @@ Partial Class frmdfe2
         Me.dgvws.EnableHeadersVisualStyles = False
         Me.dgvws.GridColor = System.Drawing.Color.Lime
         Me.dgvws.Location = New System.Drawing.Point(4, 80)
-        Me.dgvws.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvws.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvws.Name = "dgvws"
         Me.dgvws.ReadOnly = True
         Me.dgvws.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -2407,7 +2407,7 @@ Partial Class frmdfe2
         Me.Button2.Image = Global.DFe_aplicativo.My.Resources.Resources.block
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.Location = New System.Drawing.Point(8, 41)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(212, 33)
         Me.Button2.TabIndex = 53
@@ -2423,7 +2423,7 @@ Partial Class frmdfe2
         Me.Button4.Image = Global.DFe_aplicativo.My.Resources.Resources.check
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.Location = New System.Drawing.Point(8, 5)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(212, 33)
         Me.Button4.TabIndex = 51
@@ -2439,7 +2439,7 @@ Partial Class frmdfe2
         Me.btnpesquisar.Image = Global.DFe_aplicativo.My.Resources.Resources.find_new_users
         Me.btnpesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnpesquisar.Location = New System.Drawing.Point(1271, 37)
-        Me.btnpesquisar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnpesquisar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnpesquisar.Name = "btnpesquisar"
         Me.btnpesquisar.Size = New System.Drawing.Size(165, 33)
         Me.btnpesquisar.TabIndex = 48
@@ -2526,7 +2526,7 @@ Partial Class frmdfe2
         Me.Button14.Image = Global.DFe_aplicativo.My.Resources.Resources.application_sidebar_list
         Me.Button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button14.Location = New System.Drawing.Point(1052, 1)
-        Me.Button14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(4)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(211, 30)
         Me.Button14.TabIndex = 112
@@ -2544,7 +2544,7 @@ Partial Class frmdfe2
         Me.bntpar.Image = Global.DFe_aplicativo.My.Resources.Resources.database_import
         Me.bntpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bntpar.Location = New System.Drawing.Point(1287, 2)
-        Me.bntpar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.bntpar.Margin = New System.Windows.Forms.Padding(4)
         Me.bntpar.Name = "bntpar"
         Me.bntpar.Size = New System.Drawing.Size(164, 30)
         Me.bntpar.TabIndex = 110
@@ -2562,7 +2562,7 @@ Partial Class frmdfe2
         Me.btndifal.Image = Global.DFe_aplicativo.My.Resources.Resources.application_sidebar_list
         Me.btndifal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btndifal.Location = New System.Drawing.Point(1111, 2)
-        Me.btndifal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btndifal.Margin = New System.Windows.Forms.Padding(4)
         Me.btndifal.Name = "btndifal"
         Me.btndifal.Size = New System.Drawing.Size(151, 30)
         Me.btndifal.TabIndex = 109
@@ -2583,7 +2583,7 @@ Partial Class frmdfe2
         Me.Controls.Add(Me.Tabdfe)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "frmdfe2"
         Me.Text = "Tela DFe       versao 1.0.0   14-10-2019      .Net 4.8"

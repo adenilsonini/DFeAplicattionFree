@@ -15,7 +15,11 @@ Imports Amazon.S3.Model
 Imports System.Threading.Tasks
 Imports System.Security.Cryptography
 
+
 Public Class frmdfe2
+    Dim senhaCrypto As String = "49f04b8a3fcbc0de#959386ded6d828f97d&7c0ffeeb4b8cd4744$9387582e84bb5*2511241bb78a37961affdd4c0dea1c8b86b36dfac0ffee@9944362f7cd2c3b74d813078c39f524a18c1c0de454a4d817da1b762b0952c0ffeef31cb98c4b1f6e8*"
+    Dim accessKey As String
+    Dim secretKey As String
     Dim controleExec As Integer, HoraExeDfe As String
     Dim versao_sist As String = "DFe/Local  |  Versao: " & Assembly.GetExecutingAssembly.GetName.Version.ToString & "   |  14/04/2026  | Empresa Conectada: "
     Dim logar As Boolean
@@ -185,6 +189,8 @@ Public Class frmdfe2
         txttotal_reg.Text = arquivoIni.Read("total_reg_grid", "DFe")
 
         controleExec = 1
+
+        ConteudoCredenciais()
     End Sub
 
     Private Sub manifes_auto()
@@ -5697,8 +5703,11 @@ Public Class frmdfe2
             txtinfodfe.Text = "Conectando ao S3 DFe, aguarde..."
             txtinfodfe.Refresh()
 
+            ConteudoCredenciais()
+
             ' MANTEMOS O USING ABERTO PARA TODA A OPERAÇÃO
-            Using client As New AmazonS3Client(config)
+
+            Using client As New AmazonS3Client(accessKey, secretKey, config)
 
                 ' 1. LISTAGEM E DOWNLOAD
                 Dim listRequest As New ListObjectsV2Request With {
@@ -5778,6 +5787,109 @@ Public Class frmdfe2
 
     End Function
 
+    Private Function Descriptografar(texto As String) As String
+
+        texto = texto.Trim() _
+        .Replace("\", "") _
+        .Replace("-", "+") _
+        .Replace("_", "/")
+
+        Select Case texto.Length Mod 4
+            Case 2
+                texto &= "=="
+            Case 3
+                texto &= "="
+        End Select
+
+
+        Dim dados As Byte() = Convert.FromBase64String(texto)
+
+        Dim salt As Byte() = dados.Take(16).ToArray()
+        Dim iv As Byte() = dados.Skip(16).Take(16).ToArray()
+        Dim criptografado As Byte() = dados.Skip(32).ToArray()
+
+        Dim chave As Byte() = GerarChave(senhaCrypto, salt)
+
+        Using aes As Aes = Aes.Create()
+
+            aes.KeySize = 256
+            aes.Key = chave
+            aes.IV = iv
+
+            Using decryptor = aes.CreateDecryptor()
+
+                Dim descriptografado As Byte() =
+                decryptor.TransformFinalBlock(
+                    criptografado,
+                    0,
+                    criptografado.Length
+                )
+
+                Return Encoding.UTF8.GetString(descriptografado)
+
+            End Using
+
+        End Using
+
+    End Function
+
+    Private Function GerarChave(senha As String, salt As Byte()) As Byte()
+
+        Using hmac As New HMACSHA256(Encoding.UTF8.GetBytes(senha))
+
+            Dim bloco(19) As Byte
+            Buffer.BlockCopy(salt, 0, bloco, 0, 16)
+
+            bloco(19) = 1
+
+            Dim resultado As Byte() = hmac.ComputeHash(bloco)
+            Dim u As Byte() = resultado.Clone()
+
+            For i As Integer = 2 To 600000
+
+                u = hmac.ComputeHash(u)
+
+                For j As Integer = 0 To resultado.Length - 1
+                    resultado(j) = CByte(resultado(j) Xor u(j))
+                Next
+
+            Next
+
+            Return resultado
+
+        End Using
+
+    End Function
+
+    Private Sub ConteudoCredenciais()
+
+        Dim pastaAws As String = Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+            ".aws"
+        )
+
+        Dim arquivoCredenciais As String = Path.Combine(
+            pastaAws,
+            "credentials"
+        )
+
+        For Each linha As String In File.ReadAllLines(arquivoCredenciais)
+
+            If linha.Trim().StartsWith("aws_access_key_id") Then
+                accessKey = linha.Split("="c)(1).Trim()
+            End If
+
+            If linha.Trim().StartsWith("aws_secret_access_key") Then
+                secretKey = Descriptografar(
+                linha.Split("="c)(1).Trim()
+            )
+
+                Exit For
+            End If
+
+        Next
+
+    End Sub
     Private Function Busca_senha_cert(ByVal cnpj_r As String) As String
         Dim ret As String
         Dim dictionary As Dictionary(Of String, String) = New Dictionary(Of String, String)
