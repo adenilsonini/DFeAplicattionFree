@@ -21,7 +21,7 @@ Public Class frmdfe2
     Dim accessKey As String
     Dim secretKey As String
     Dim controleExec As Integer, HoraExeDfe As String
-    Dim versao_sist As String = "DFe/Local  |  Versao: " & Assembly.GetExecutingAssembly.GetName.Version.ToString & "   |  14/04/2026  | Empresa Conectada: "
+    Dim versao_sist As String = "DFe/Local  |  Versao: " & Assembly.GetExecutingAssembly.GetName.Version.ToString & "   |  01/11/2026  | Empresa Conectada: "
     Dim logar As Boolean
     Dim nrecibo_cont As String, xmotivo_cont As String, cstat_cont As String, nprot_cont As String
     Dim xmlAssinado As XmlDocument
@@ -5865,7 +5865,7 @@ Public Class frmdfe2
 
         Dim pastaAws As String = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
-            ".aws"
+            ".aws-cryp"
         )
 
         Dim arquivoCredenciais As String = Path.Combine(
